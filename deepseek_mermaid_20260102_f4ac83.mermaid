@@ -1,0 +1,28 @@
+flowchart LR
+    subgraph Original[<b>ORIGINAL PAPER</b><br><i>Single-Pass Approach</i>]
+        direction TB
+        O1[Image] --> O2[<b>LU-Net + RA</b>]
+        O2 --> O3[<b>Segmentation Output</b><br>4.8 ms inference time]
+    end
+
+    subgraph Proposed[<b>PROPOSED ENHANCEMENT</b><br><i>Two-Stage Approach</i>]
+        direction TB
+        P1[Image] --> P2[<b>LU-Net + RA</b><br><i>Stage 1: Coarse Prediction</i>]
+        P2 --> P3[Coarse Mask]
+        P3 --> P4[<b>Conditional Diffusion Model</b><br><i>Stage 2: Refinement</i>]
+        P1 -.-> P4
+        
+        P4 --> P5[<b>Refined Segmentation Output</b><br>40-100 ms inference time<br><i>tunable quality/speed trade-off</i>]
+        
+        subgraph P4[Conditional Diffusion Components]
+            P4_1[Image Encoder]
+            P4_2[Mask Encoder]
+            P4_3[Diffusion U-Net]
+            P4_4[DDIM Sampling]
+        end
+    end
+
+    Original -- vs --> Proposed
+    
+    style Original fill:#e6f3ff,stroke:#0066cc,stroke-width:2px
+    style Proposed fill:#f0f9eb,stroke:#4caf50,stroke-width:2px

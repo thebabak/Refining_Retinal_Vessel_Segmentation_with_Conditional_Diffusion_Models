@@ -1,0 +1,16 @@
+\begin{tabular}{llll}
+\toprule
+Aspect & Baseline LU-Net & Diffusion Refiner & Combined \\
+\midrule
+Dice (CHASE) & 0.795 & TBD* & 0.82-0.85? \\
+IoU (CHASE) & 0.691 & TBD* & 0.72-0.75? \\
+Sensitivity & 0.822 & TBD* & 0.85-0.88? \\
+Specificity & 0.984 & TBD* & ~0.98 \\
+Inference Time (ms) & 4.8 & 50-100 & 55-105 \\
+Parameters (M) & 1.94 & +1.2 & 3.1 \\
+GFLOPs & 12.2 & TBD & TBD \\
+Thin Vessel Focus & RA Module & Iter. Refinement & ✅✅✅ Both \\
+Uncertainty Est. & ❌ No & ✅ Sampling Var. & ✅ Full \\
+Clinical Ready & ✅ Yes & ⚠ Slower & ⚠ With tuning \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision
+PyYAML
+einops
+opencv-python
+scikit-learn
+matplotlib
+pandas
