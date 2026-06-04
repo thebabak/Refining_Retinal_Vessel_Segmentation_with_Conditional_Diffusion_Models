@@ -176,7 +176,7 @@ def print_metrics(agg_metrics):
 
 if __name__ == '__main__':
     from pathlib import Path
-    from .dataset import CHASEDataset
+    from .dataset2 import CHASEDataset
     from .models import MaskAutoencoder, ImageEncoder, DiffusionUNet, LatentDiffusionModel
     from .inference import load_checkpoint
     

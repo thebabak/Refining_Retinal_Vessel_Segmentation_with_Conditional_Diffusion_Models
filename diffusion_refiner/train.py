@@ -2,7 +2,46 @@ import torch
 from torch.utils.data import DataLoader
 from torch import optim
 from pathlib import Path
-from .dataset import CHASEDataset, DummyDriveDataset
+from .dataset2 import CHASEDataset, DummyDriveDataset, DRIVEDataset
+def train_drive(images_dir, masks_dir, epochs=5, batch_size=2, lr=2e-4):
+    """Train diffusion refiner on DRIVE dataset."""
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print(f"Using device: {device}")
+
+    # Load DRIVE dataset
+    ds = DRIVEDataset(images_dir, masks_dir)
+    dl = DataLoader(ds, batch_size=batch_size, shuffle=True)
+
+    # Instantiate models
+    ae = MaskAutoencoder(in_ch=1, base=32, latent_dim=64)
+    img_enc = ImageEncoder(in_ch=3, feat_dim=128)
+    unet = DiffusionUNet(dim=64, cond_dim=128)
+    model = LatentDiffusionModel(ae, img_enc, unet, cond_dim=128).to(device)
+
+    optimizer = torch.optim.AdamW(model.parameters(), lr=lr)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=epochs)
+
+    print(f"Training for {epochs} epochs on {len(ds)} DRIVE images...")
+    for epoch in range(epochs):
+        epoch_loss = 0.0
+        for i, batch in enumerate(dl):
+            loss = train_step(model, optimizer, batch, device)
+            epoch_loss += loss
+            if (i + 1) % 5 == 0:
+                print(f"Epoch {epoch+1}/{epochs}, step {i+1}/{len(dl)}, loss={loss:.4f}")
+        avg_loss = epoch_loss / len(dl)
+        scheduler.step()
+        print(f"Epoch {epoch+1} complete, avg loss={avg_loss:.4f}\n")
+
+    # Save checkpoint
+    ckpt_path = Path("diffusion_refiner_drive_checkpoint.pth")
+    torch.save({
+        'ae': ae.state_dict(),
+        'img_enc': img_enc.state_dict(),
+        'unet': unet.state_dict(),
+        'model': model.state_dict(),
+    }, ckpt_path)
+    print(f"Saved DRIVE checkpoint to {ckpt_path}")
 from .models import MaskAutoencoder, ImageEncoder, DiffusionUNet, LatentDiffusionModel, ddpm_loss
 
 

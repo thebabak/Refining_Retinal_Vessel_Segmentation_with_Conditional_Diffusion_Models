@@ -4,7 +4,7 @@ Generate uncertainty quantification image from real CHASE-DB1 data using ensembl
 import torch
 import matplotlib.pyplot as plt
 from pathlib import Path
-from diffusion_refiner.dataset import CHASEDataset
+from diffusion_refiner.dataset2 import CHASEDataset
 from diffusion_refiner.inference import load_checkpoint, refine_mask_ensemble
 
 # Paths

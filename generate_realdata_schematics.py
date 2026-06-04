@@ -5,7 +5,7 @@ Saves all outputs to plots/realdata/.
 import numpy as np
 import matplotlib.pyplot as plt
 from pathlib import Path
-from diffusion_refiner.dataset import CHASEDataset
+from diffusion_refiner.dataset2 import CHASEDataset
 from diffusion_refiner.inference import load_checkpoint, refine_mask_ensemble
 import torch
 

@@ -8,7 +8,7 @@ import matplotlib.patches as mpatches
 from pathlib import Path
 import cv2
 from PIL import Image
-from diffusion_refiner.dataset import CHASEDataset
+from diffusion_refiner.dataset2 import CHASEDataset
 from diffusion_refiner.inference import load_checkpoint, refine_mask_ensemble
 import torch
 

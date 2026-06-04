@@ -39,7 +39,8 @@ class DiffusionScheduler:
 
     def q_sample(self, z0, t, noise):
         """q(z_t | z0) forward process."""
-        a_t = self.alphas_cumprod[t].view(-1, 1, 1, 1)
+        alphas_cumprod = self.alphas_cumprod.to(t.device)
+        a_t = alphas_cumprod[t].view(-1, 1, 1, 1)
         return torch.sqrt(a_t) * z0 + torch.sqrt(1 - a_t) * noise
 
     def q_posterior_mean_var(self, z0, z_t, t):

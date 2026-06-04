@@ -1,0 +1,4 @@
+﻿dataset,method,valid_for_main_table,num_seeds,dice,iou,acc,sen,spec,auc,time_ms,fps
+CHASE-DB1,AE reconstruction (GT input; sanity only),NO,3,0.9036 ± 0.0108,0.8246 ± 0.0179,0.9869 ± 0.0016,0.8995 ± 0.0037,0.9933 ± 0.0015,0.9956 ± 0.0010,33.45 ± 1.55,31.45 ± 1.40
+CHASE-DB1,Baseline coarse mask (baseline),YES,3,0.7764 ± 0.0000,0.6351 ± 0.0000,0.9695 ± 0.0000,0.7678 ± 0.0000,0.9852 ± 0.0000,0.8765 ± 0.0000,,
+CHASE-DB1,Proposed refinement from coarse mask (baseline),YES,3,0.7652 ± 0.0039,0.6199 ± 0.0051,0.9672 ± 0.0008,0.7770 ± 0.0016,0.9820 ± 0.0010,0.9658 ± 0.0023,31.85 ± 1.68,32.94 ± 1.68
