@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+\begin{document}
+
+\section*{Uncertainty Analysis Figures}
+
+\begin{figure}[H]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{plots/realdata/realdata_05_uncertainty.png}
+    \caption{CHASE-DB1 uncertainty analysis}
+    \label{fig:uncertainty_chase}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{plots/drive/drive_uncertainty.png}
+    \caption{DRIVE uncertainty analysis}
+    \label{fig:uncertainty_drive}
+  \end{subfigure}
+  \caption{Qualitative uncertainty analysis examples for retinal vessel refinement. Each panel shows, from left to right: input fundus image, ground-truth vessel mask, refined mask obtained as the mean of decoded stochastic refinement outputs, and uncertainty map computed as the pixel-wise variance across decoded samples. The variance maps mainly highlight vessel boundaries, thin branches, and ambiguous low-contrast regions.}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{plots/hrf/hrf_uncertainty.png}
+  \caption{HRF uncertainty analysis. From left to right: input fundus image, ground-truth vessel mask, refined mask obtained as the mean of decoded stochastic refinement outputs, and uncertainty map computed as the pixel-wise variance across decoded samples. The variance map mainly highlights vessel boundaries, thin branches, and ambiguous low-contrast regions.}
+  \label{fig:uncertainty_hrf}
+\end{figure}
+
+\end{document}
