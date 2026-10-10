@@ -1,0 +1,10 @@
+{
+  "seed": 3001,
+  "selected_epoch": 3,
+  "epochs_completed": 28,
+  "validation_dice": 0.8283856328723345,
+  "baseline_mean": 0.8088465008549532,
+  "refined_mean": 0.8086820367603,
+  "parameters": 488145,
+  "completed_at": "2026-10-09_10-35-15"
+}

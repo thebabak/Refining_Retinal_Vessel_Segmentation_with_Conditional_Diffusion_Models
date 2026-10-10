@@ -1,104 +1,46 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-
-# Virtual environments
+# Publication scope: source code and revise reports only.
+/**
+!*/
+!README.md
+!.gitignore
+!*.py
+!*.mjs
+!*.js
+!*.ps1
+!*.sh
+!*.ipynb
+!*.yaml
+!*.yml
+!*.toml
+!requirements*.txt
+!Dockerfile
+!Makefile
+!revise/**
+.git/
 .venv/
 venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# PyCharm
-.idea/
-
-# VS Code
-.vscode/
-
-# Mac OS
-.DS_Store
-
-# Windows
-Thumbs.db
-Desktop.ini
-
-# Logs and databases
-*.log
-*.sqlite3
-
-# Model weights and checkpoints
-*.pth
+node_modules/
+__pycache__/
+tmp/
+baseline_audit_2026-10-05/
+*.pyc
 *.pt
+*.pth
 *.ckpt
-*.h5
 *.npz
-*.npz
-*.pkl
-*.joblib
-
-# Data and generated images
-plots/
-data/
-
-# PDF and large paper outputs
-*.pdf
-
-# Other
-*.bak
-*.swp
-*.tmp
-
-# Ignore latex build files
-*.aux
-*.bbl
-*.blg
-*.brf
-*.fls
-*.fdb_latexmk
+*.npy
 *.log
+*.lock
+revise/**/checkpoints/
+revise/new_spatial_refiner_2026-10-09_10-34-17/spatial_refiner_complete_data_2026-10-09_10-36-23.zip
+revise/new_spatial_refiner_DRIVE_HRF_2026-10-09_12-20-45/spatial_refiner_complete_data_2026-10-09_12-20-45.zip
+
+# LaTeX compilation products
+*.aux
 *.out
 *.toc
+*.fls
+*.fdb_latexmk
 *.synctex.gz
-*.nav
-*.snm
-*.vrb
-*.lof
-*.lot
-*.lol
-*.ilg
-*.ind
-*.idx
-*.glo
-*.gls
-*.ist
-*.acn
-*.acr
-*.alg
-*.glg
-*.glsdefs
-*.run.xml
-
+*.bbl
+*.blg

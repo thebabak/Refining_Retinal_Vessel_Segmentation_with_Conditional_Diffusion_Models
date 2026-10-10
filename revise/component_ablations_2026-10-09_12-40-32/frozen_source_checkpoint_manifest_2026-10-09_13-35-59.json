@@ -1,0 +1,152 @@
+[
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_42\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "2f307375388ea1286644e01698683de23284b782b87b2752b1403b4110a4259d"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_42\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "d9ce4b93f3c35328219484f98d2836a99865c9e9caf24fc80e2acca342a6f483"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_123\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "ec1657d1fe44d8819fea6fbeaa307e42ff03c807c21ba7f010e377d67900191b"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_123\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "917cb52b8623abbddf3a81fd6afc92ebce472d8291e1559b746fb9c325aa117f"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_2026\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "30d53561289ce1b035a7be18465814fea7d23f6b830779bd46011da1836d3b80"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_2026\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "834e0311b3f479cf178b3bc8664b563be2c7687a429071a66e21367c48426712"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_3000\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "190132536a4ec662b51b13d1bcec42fcab13b099f04c14aefb33fddd38216d0a"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_3000\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "0a294f851cf7951e946ef6f68531f5f0b820206c6194a280a9c6977b39669991"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_3001\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "156b7f10b297b0bcbc7c35a6f492b02eb334288f4207d5e86baedae63705c516"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\CHASE\\train_seed_3001\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "a77824a0dbc9281ad7da431851cb7166fa633f8b43ddda8e592a4253ed6ef295"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_42\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "28c012007af1a784a32abcdd77a4a9756698f30c0925039e7a757e94c2b71436"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_42\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "39d7775458b1443c579b078cb6d5be1ff908ac29dd693c68872b4073bf485bf3"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_123\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "72618cee78ee4c2dd1c6f5856e90addb9aa65487cfe829ba4bb11e3c82fcaeb3"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_123\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "59f02a7ff22b5f3673ccd09e3b7ecbe8f053be70865cfe8fff73619f778e625a"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_2026\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "634a539cb038b66fab6c471b5d87c284fa5f69fe55e3080aa0385ff30a76f41a"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_2026\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "138d8f59c5e55e32902d724680ea0f299d92dd0596de399b98784136ffdfa4e3"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_3000\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "ac45fe89f3ba8d3451ea70d5bcb24a19706f6586b4b0c453b316ea4c918b319a"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_3000\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "14d5bf4ce3380158d48c1947e480bc4325c90a59254e4188fd50582dde49262c"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_3001\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "016dc9d7fb9c35330ace20a68d8f4eb0261a63e23ec013e7c114970d616e715b"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\DRIVE\\train_seed_3001\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "0b05b4bb653fbe29439aa26562725d9ec4e81b9541c6ba6ba1fafaa654c3e48c"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_42\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "3418a1ecf47c05e92a8dd25d76f41267642e7364a333359cee00521c3d010224"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_42\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "d6d8d15064608c860e1e5fc972fa8faf0ff6f3a0d4869f48c342f13e4e835567"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_123\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "d2beb8903f7e625f50771cac271f795047c9b06e75db8ae06fa5778c6bd61943"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_123\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "8fc5f81f0b73df7e8e0f88ff6eb309b75decccd31615af60366392e5685e63d6"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_2026\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "11c4d950b2df330b13149a90b6e4e24d9d9d01f46dcead0f06751d01bfbbd7d1"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_2026\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "a5fc15aa98ee089dc523a33bee75aef5454a68380defa3c12ff6feb211c9bdc6"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_3000\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "e4ce28bbdb5b5fb4efbf6f83258494fd3df97fa5c62c9ae6a9dbf06461a70fa3"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_3000\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "196a750f4086912f5d1cbd4c408398f379b6871941146fbe65b24b208bacb2a6"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_3001\\baseline.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\frozen_baseline_2026-10-09_13-35-59.pt",
+    "sha256": "0b882f09d54d2438a205c658b4d0736e88cbdb6c77c74480e900cf1f67a17135"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24\\HRF\\train_seed_3001\\autoencoder.pt",
+    "saved": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\initial_autoencoder_2026-10-09_13-35-59.pt",
+    "sha256": "7703aafb39f50c075c44476c96e81845a692a2b1a444b7ebb80d2b9913996abc"
+  }
+]

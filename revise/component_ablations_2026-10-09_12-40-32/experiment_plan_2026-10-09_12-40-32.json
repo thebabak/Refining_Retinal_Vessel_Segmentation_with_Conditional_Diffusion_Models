@@ -1,0 +1,38 @@
+{
+  "datasets": [
+    "CHASE",
+    "DRIVE",
+    "HRF"
+  ],
+  "training_seeds": [
+    42,
+    123,
+    2026,
+    3000,
+    3001
+  ],
+  "sampling_seeds": [
+    42,
+    123,
+    2026,
+    3000,
+    3001
+  ],
+  "variants": [
+    "global_frozen",
+    "deterministic",
+    "target_diffusion",
+    "no_image",
+    "spatial_film",
+    "global_additive",
+    "ae_finetuned"
+  ],
+  "new_training_jobs": 105,
+  "evaluation_variants": 8,
+  "expected_records": 7200,
+  "baseline_ae_reference": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\all_datasets_five_full_runs_2026-10-08_15-38-24",
+  "epochs": 100,
+  "steps": 50,
+  "original_tables_unchanged": true,
+  "manuscript_unchanged": true
+}

@@ -1,0 +1,2 @@
+Original author baseline and50step diffusion means are supplied-table context, retained without rescaling. Source: F:\PHD\AI in Med\paper3\reviewer_comments\uploaded_full_paired_tests_2026-10-08_21-12-51\mean_and_SD_by_steps.txt
+New in-sample/OOF columns originate from the executed matched experiment. The OOF-minus-in-sample difference and all paired tests concern only those two new arms; they are not paired against the original author diffusion results. No original record, experimental metric or manuscript was modified.

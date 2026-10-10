@@ -1,0 +1,30 @@
+{
+  "held_out": [
+    "Image_10L",
+    "Image_10R",
+    "Image_11L",
+    "Image_11R"
+  ],
+  "fit": [
+    "Image_01L",
+    "Image_01R",
+    "Image_04L",
+    "Image_04R",
+    "Image_07L",
+    "Image_07R",
+    "Image_08L",
+    "Image_08R",
+    "Image_12L",
+    "Image_12R",
+    "Image_14L",
+    "Image_14R"
+  ],
+  "validation": [
+    "Image_03L",
+    "Image_03R",
+    "Image_06L",
+    "Image_06R"
+  ],
+  "test_used_for_selection": false,
+  "checkpoint_sha256": "e8b4068a3c0d5e592cc41dc970588eb10bc39fd1415de98f5d33531db75f1616"
+}

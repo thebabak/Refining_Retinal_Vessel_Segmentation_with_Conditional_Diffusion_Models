@@ -1,0 +1,7 @@
+{
+  "dataset": "CHASE",
+  "seed": 42,
+  "trained_variants": 7,
+  "evaluation_variants": 8,
+  "completed_at": "2026-10-09_12-44-04"
+}

@@ -1,0 +1,9 @@
+{
+  "verified_records": 2000,
+  "paired_sampling_averaged_records": 200,
+  "fold_models": 55,
+  "new_refiners": 15,
+  "completed_at": "2026-10-10_00-17-03",
+  "all_confusion_counts_and_metrics": "PASS",
+  "fold_membership_and_checkpoint_hashes": "PASS"
+}

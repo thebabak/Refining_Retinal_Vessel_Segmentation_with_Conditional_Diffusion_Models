@@ -1,0 +1,7 @@
+{
+  "variant": "ae_finetuned",
+  "records": 40,
+  "checkpoint_sha256": "d911a524e51cfc0f920bda854b19ba9def5d06826a2fafeb2d14a138961b23f7",
+  "completed_at": "2026-10-09_13-29-07",
+  "updated_parameters": 527233
+}

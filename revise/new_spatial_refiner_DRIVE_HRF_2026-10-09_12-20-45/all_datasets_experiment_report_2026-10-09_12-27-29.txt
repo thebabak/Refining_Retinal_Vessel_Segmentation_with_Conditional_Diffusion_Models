@@ -1,0 +1,14 @@
+New spatial RGB+coarse residual U-Net control;488145 learned parameters;BCE/Dice;five independent refiner training seeds per dataset.
+Baseline frozen from available executable checkpoints. Each baseline/refiner pair evaluated on identical inputs/GT/region;validated checkpoint selection including identity.
+Original supplied tables unchanged;new results kept separately. This is not a paired comparison to original diffusion scores or a parameter-matched diffusion ablation.
+40 CHASE,100 DRIVE,60 HRF image-seed records;all200 checked against saved FP32 predictions and confusion counts.
+CHASE intervals resample4subjects with both eyes retained;DRIVE image-level;HRF pathology-stratified image-level;training seeds also resampled50,000times.
+Training-seed paired t and exact signed-rank tests. DRIVE/HRF have separate Holm correction across the two new comparisons. CHASE was earlier standalone;do not treat combined nominal values as a new multiplicity-controlled family.
+Small fixed test cohorts and unknown patient independence for DRIVE/HRF limit interpretation. Signed-rank resolution with only5seeds is coarse.
+
+CHASE-DB1: baseline 0.810514023 +/- 0.001805530; refiner 0.810393316 +/- 0.001846594; delta -0.000120707;CI [-0.00034290250544024014, 1.1338947788797072e-05];t p 0.2199390525167893;signed-rank p 0.25
+Selected epochs: [(42, 10), (123, 0), (2026, 1), (3000, 0), (3001, 3)]
+DRIVE: baseline 0.791814385 +/- 0.007557284; refiner 0.797647359 +/- 0.004596833; delta +0.005832974;CI [0.0019821204074395925, 0.010680573471589957];t p 0.03005716488705746;signed-rank p 0.0625
+Selected epochs: [(42, 73), (123, 14), (2026, 66), (3000, 86), (3001, 61)]
+HRF: baseline 0.732121014 +/- 0.003489917; refiner 0.739538084 +/- 0.001955396; delta +0.007417069;CI [0.00409270991479291, 0.01132722094235806];t p 0.013328690003711115;signed-rank p 0.0625
+Selected epochs: [(42, 12), (123, 26), (2026, 17), (3000, 45), (3001, 21)]

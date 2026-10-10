@@ -1,0 +1,10 @@
+Available executed configuration, not verified original-positive-score provenance:
+Refinement:1000 diffusion timesteps; actual warm-start index99;50DDIMtransitions eta0;CFG1.5. Do not silently infer original rho from this.
+Training and sampling seeds:42,123,2026,3000,3001.
+Interpolation:RGB/green bilinear; binary annotations/FOV nearest-neighbour,512x512.
+Refiner training:batch4,AdamWlr1e-4,weight_decay1e-3,100epochs fixed finalcheckpoint.
+New latency benchmark:batch1 FP32,5warm-ups perimage/mode,10timed repetitions perimage,CUDA synchronization.
+FOV:CHASE wholeimage;DRIVE local dataset maskGIFs;HRF field of view bitmap fromlocalSuperviselyJSON,upstreamconversion provenance undocumented.
+Denoiser:inputConv2d64->64,k3,p1;ResBlock64 withGN8/SiLU/twoConv3x3 andLinear128->128FiLM;downConv2d64->64,k4,s2,p1;secondsameResBlock;upConvTranspose2d64->64,k4,s2,p1;outputConv2d64->64,k1. SeparatetimeMLP64->128->128,SiLU;condition added totimeembedding projection.
+Sources:paired_reproduction/run_component_ablations.py;paired_reproduction/run.py;paired_reproduction/run_drive.py;paired_reproduction/run_hrf_baseline.py;diffusion_refiner/models.py;paired_reproduction/benchmark_pipeline.py.
+Original refinement strength/evaluation seed and exact code/checkpoint linkage remainunverified. Existing available weights are new-experiment weights. No publicrepositoryrelease claimed. No manuscriptchange made by this audit.

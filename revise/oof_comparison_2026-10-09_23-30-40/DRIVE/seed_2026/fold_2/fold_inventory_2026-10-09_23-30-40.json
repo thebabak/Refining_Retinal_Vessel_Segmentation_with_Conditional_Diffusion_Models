@@ -1,0 +1,30 @@
+{
+  "held_out": [
+    "24_training",
+    "23_training",
+    "40_training",
+    "21_training"
+  ],
+  "fit": [
+    "25_training",
+    "26_training",
+    "27_training",
+    "28_training",
+    "30_training",
+    "31_training",
+    "32_training",
+    "35_training",
+    "36_training",
+    "37_training",
+    "38_training",
+    "39_training"
+  ],
+  "validation": [
+    "22_training",
+    "29_training",
+    "33_training",
+    "34_training"
+  ],
+  "test_used_for_selection": false,
+  "checkpoint_sha256": "5b785fcf30334f14f60ad2fb3fffbec557951c44fcb77f08cec1abde1b5e8f43"
+}

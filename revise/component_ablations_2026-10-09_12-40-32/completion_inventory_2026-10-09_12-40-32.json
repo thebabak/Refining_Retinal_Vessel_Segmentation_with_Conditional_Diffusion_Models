@@ -1,0 +1,842 @@
+[
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 8,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 80,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 378112
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 42,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_42\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 527233
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 8,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 80,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 378112
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 123,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_123\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 527233
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 8,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 80,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 378112
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 2026,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_2026\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 527233
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 8,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 80,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 378112
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3000,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3000\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 527233
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 8,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 80,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 378112
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 405824
+  },
+  {
+    "dataset": "CHASE",
+    "seed": 3001,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\CHASE\\seed_3001\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 40,
+    "parameters": 527233
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 20,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 200,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 378112
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 42,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_42\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 527233
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 20,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 200,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 378112
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 123,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_123\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 527233
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 20,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 200,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 378112
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 2026,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_2026\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 527233
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 20,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 200,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 378112
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3000,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3000\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 527233
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 20,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 200,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 378112
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 405824
+  },
+  {
+    "dataset": "DRIVE",
+    "seed": 3001,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\DRIVE\\seed_3001\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 100,
+    "parameters": 527233
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 12,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 120,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 378112
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 42,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_42\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 527233
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 12,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 120,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 378112
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 123,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_123\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 527233
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 12,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 120,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 378112
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 2026,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_2026\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 527233
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 12,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 120,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 378112
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3000,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3000\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 527233
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "global_frozen",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\global_frozen\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "deterministic",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\deterministic\\model_2026-10-09_12-40-32.pt",
+    "records": 12,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "target_diffusion",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\target_diffusion\\model_2026-10-09_12-40-32.pt",
+    "records": 120,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "no_image",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\no_image\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 378112
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "spatial_film",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\spatial_film\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "global_additive",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\global_additive\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 405824
+  },
+  {
+    "dataset": "HRF",
+    "seed": 3001,
+    "variant": "ae_finetuned",
+    "checkpoint": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32\\HRF\\seed_3001\\ae_finetuned\\model_2026-10-09_12-40-32.pt",
+    "records": 60,
+    "parameters": 527233
+  }
+]

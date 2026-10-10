@@ -1,0 +1,41 @@
+[
+  {
+    "dataset": "CHASE",
+    "mean_oof_minus_in_sample": -0.00022981018760645787,
+    "paired_t_p": 0.14099083275648222,
+    "exact_signed_rank_p": 0.0625,
+    "crossed_bootstrap_95ci": [
+      -0.0005203215786134918,
+      -3.268093041993714e-05
+    ],
+    "bootstrap_resamples": 50000,
+    "holm_paired_t_p": 0.28385633128037885,
+    "holm_exact_signed_rank_p": 0.1875
+  },
+  {
+    "dataset": "DRIVE",
+    "mean_oof_minus_in_sample": -0.0001432731971428447,
+    "paired_t_p": 0.09461877709345962,
+    "exact_signed_rank_p": 0.125,
+    "crossed_bootstrap_95ci": [
+      -0.00028826626858335274,
+      -3.163128120650828e-05
+    ],
+    "bootstrap_resamples": 50000,
+    "holm_paired_t_p": 0.28385633128037885,
+    "holm_exact_signed_rank_p": 0.25
+  },
+  {
+    "dataset": "HRF",
+    "mean_oof_minus_in_sample": -0.0002034678676617459,
+    "paired_t_p": 0.4551620458370876,
+    "exact_signed_rank_p": 0.4375,
+    "crossed_bootstrap_95ci": [
+      -0.0006760511075618274,
+      0.00023257331949503522
+    ],
+    "bootstrap_resamples": 50000,
+    "holm_paired_t_p": 0.4551620458370876,
+    "holm_exact_signed_rank_p": 0.4375
+  }
+]

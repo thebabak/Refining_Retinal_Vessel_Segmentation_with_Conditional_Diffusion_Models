@@ -1,0 +1,37 @@
+[
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\run.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_run_2026-10-09_23-30-40.py",
+    "sha256": "08a986392ddd329ea36e878ff954564e207319ea9dc86dd9b3c85abd7a551a7c"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\run_drive.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_run_drive_2026-10-09_23-30-40.py",
+    "sha256": "7b0ff54e7eafacd037f47cf1dc4fbb21353b4c5d21303ca56d85b199ff706dfe"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\run_hrf_baseline.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_run_hrf_baseline_2026-10-09_23-30-40.py",
+    "sha256": "ca7bb2b98c8a76f18c20cb582c7d3575309086040c6351a1a0e0073cfc47bb05"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\run_all_datasets_five_full_runs.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_run_all_datasets_five_full_runs_2026-10-09_23-30-40.py",
+    "sha256": "f7886c4e03d5aea8fb85434501e808f5174b4e099bf6db6fb6444840e14cd291"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\run_component_ablations.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_run_component_ablations_2026-10-09_23-30-40.py",
+    "sha256": "e03480fb594a8ecc3237905b70dbfe7f5ef0d99347ec340e1c9f534aae4ad427"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\official_model.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_official_model_2026-10-09_23-30-40.py",
+    "sha256": "881a7d330af9aa4d8e0b87cdd326bd174f2a180878ae89ec9e5e75205d25ce9a"
+  },
+  {
+    "source": "F:\\PHD\\AI in Med\\paper3\\paired_reproduction\\report_all_datasets_full_runs.py",
+    "copy": "F:\\PHD\\AI in Med\\paper3\\revise\\oof_comparison_2026-10-09_23-30-40\\source_report_all_datasets_full_runs_2026-10-09_23-30-40.py",
+    "sha256": "fb0131d4e180b27f235752010578b39b0c303205d471154423ab2635389c94ff"
+  }
+]

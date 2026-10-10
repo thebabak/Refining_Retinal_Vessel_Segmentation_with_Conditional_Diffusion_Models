@@ -1,0 +1,11 @@
+{
+  "dataset": "HRF",
+  "seed": 42,
+  "selected_epoch": 12,
+  "epochs_completed": 37,
+  "validation_dice": 0.7483202127291242,
+  "baseline_mean": 0.73311697385047,
+  "refined_mean": 0.7375030321155439,
+  "parameters": 488145,
+  "completed_at": "2026-10-09_12-22-20"
+}

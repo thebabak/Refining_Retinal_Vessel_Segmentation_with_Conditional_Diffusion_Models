@@ -1,0 +1,7 @@
+{
+  "dataset": "HRF",
+  "seed": 123,
+  "trained_variants": 7,
+  "evaluation_variants": 8,
+  "completed_at": "2026-10-09_13-31-10"
+}

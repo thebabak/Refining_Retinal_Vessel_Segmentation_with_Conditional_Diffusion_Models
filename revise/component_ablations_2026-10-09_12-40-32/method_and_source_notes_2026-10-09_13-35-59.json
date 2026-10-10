@@ -1,0 +1,10 @@
+{
+  "training_initialisation": "Model initialisation job seed; identical initial states copied within each paired dataset/seed batch",
+  "training_rng": "torch.manual_seed(training_seed+98765),same timestep/noise/dropout draws across variants;deterministic variant draws and discards timestep/noise to keep conditioning-dropout sequence aligned",
+  "inference_rng": "Independent explicitly seeded CUDA generators for each sampling label;matched Gaussian tensor across modes",
+  "GT_usage": "Training supervision and final metric calculation only;not provided to test-time denoiser",
+  "parameter_scope": "Updated parameters in new executable implementation,not original manuscript architecture;frozen baseline haszero updates duringrefinement",
+  "statistics": "Exploratory CIs are not simultaneous confidence intervals;Holm correction applies separately to24t tests and24exact signed-rank tests",
+  "original_data_policy": "Original supplied tables remain unchanged and are not merged into controlled component tests",
+  "source_folder": "F:\\PHD\\AI in Med\\paper3\\revise\\component_ablations_2026-10-09_12-40-32"
+}

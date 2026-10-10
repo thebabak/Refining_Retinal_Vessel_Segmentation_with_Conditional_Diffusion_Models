@@ -1,0 +1,11 @@
+Thank you for this comment. We added an additional deterministic learned-refiner experiment on all three datasets. The spatial residual U-Net receives RGB images and coarse probability maps, uses488,145 learned parameters, and is trained with equally weighted BCE and Dice losses. Five refiners were independently trained per dataset with validation-based checkpoint selection. We provide200 paired per-image baseline/refiner records, between-training-seed SDs, paired tests, and exploratory confidence intervals.
+
+The following contextual summary has been added to the manuscript:
+Dataset | Paired coarse baseline | Spatial deterministic refiner | Supplied diffusion at50steps
+CHASE-DB1 | 0.810514 | 0.810393 | 0.8349996208320358
+DRIVE | 0.791814 | 0.797647 | 0.8350002704911688
+HRF | 0.732121 | 0.739538 | 0.7929995417119752
+
+The supplied diffusion means are numerically higher on all three datasets. However, the deterministic-refiner experiment and supplied diffusion table have distinct experimental provenance. The coarse/refiner pairs are matched within the new experiment, but a matching original diffusion checkpoint and prediction record was unavailable. We therefore present the table as contextual, not as a controlled paired comparison or evidence that the gain is specific to diffusion.
+
+Same-protocol evaluations of HiDiffSeg, RefineCatDiff and Li et al. remain outstanding. We do not treat architectural differences as proof that reproduction is impossible. The new deterministic experiment adds an informative comparator, while a fully matched diffusion/comparator benchmark is still needed to isolate the diffusion formulation's benefit. These limitations are stated explicitly in the revised manuscript.

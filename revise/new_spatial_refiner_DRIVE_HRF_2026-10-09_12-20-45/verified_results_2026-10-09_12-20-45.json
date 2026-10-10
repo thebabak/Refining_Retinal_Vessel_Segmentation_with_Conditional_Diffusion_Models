@@ -1,0 +1,172 @@
+[
+  {
+    "dataset": "DRIVE",
+    "training_seeds": [
+      42,
+      123,
+      2026,
+      3000,
+      3001
+    ],
+    "verified_records": 100,
+    "baseline_mean": 0.7918143854721706,
+    "baseline_SD": 0.007557283569116867,
+    "refined_mean": 0.7976473590709341,
+    "refined_SD": 0.0045968326482715306,
+    "mean_delta": 0.005832973598763469,
+    "crossed_bootstrap_95CI": [
+      0.0019821204074395925,
+      0.010680573471589957
+    ],
+    "paired_t_p": 0.03005716488705746,
+    "exact_signed_rank_p": 0.0625,
+    "bootstrap_draws": 50000,
+    "training_history": [
+      {
+        "dataset": "DRIVE",
+        "seed": 42,
+        "selected_epoch": 73,
+        "epochs_completed": 98,
+        "validation_dice": 0.766394813623027,
+        "baseline_mean": 0.7979751643822686,
+        "refined_mean": 0.8033969718889665,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-21-43"
+      },
+      {
+        "dataset": "DRIVE",
+        "seed": 123,
+        "selected_epoch": 14,
+        "epochs_completed": 39,
+        "validation_dice": 0.7679939118199591,
+        "baseline_mean": 0.8014699969179576,
+        "refined_mean": 0.8017264702257725,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-22-36"
+      },
+      {
+        "dataset": "DRIVE",
+        "seed": 2026,
+        "selected_epoch": 66,
+        "epochs_completed": 91,
+        "validation_dice": 0.7582897422892396,
+        "baseline_mean": 0.7887492965213416,
+        "refined_mean": 0.7950209567447889,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-23-47"
+      },
+      {
+        "dataset": "DRIVE",
+        "seed": 3000,
+        "selected_epoch": 86,
+        "epochs_completed": 111,
+        "validation_dice": 0.7595197416402655,
+        "baseline_mean": 0.7872513980819094,
+        "refined_mean": 0.793048305847604,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-25-00"
+      },
+      {
+        "dataset": "DRIVE",
+        "seed": 3001,
+        "selected_epoch": 61,
+        "epochs_completed": 86,
+        "validation_dice": 0.7625037228228042,
+        "baseline_mean": 0.7836260714573763,
+        "refined_mean": 0.7950440906475389,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-26-26"
+      }
+    ],
+    "identity_selections": 0,
+    "resampling": "Training seeds and images;HRF pathology-stratified;patient independence unverified",
+    "scope": "New retained-checkpoint experiment;not paired to supplied original diffusion outputs",
+    "holm_paired_t_p": 0.03005716488705746,
+    "holm_exact_signed_rank_p": 0.125
+  },
+  {
+    "dataset": "HRF",
+    "training_seeds": [
+      42,
+      123,
+      2026,
+      3000,
+      3001
+    ],
+    "verified_records": 60,
+    "baseline_mean": 0.7321210144209694,
+    "baseline_SD": 0.0034899166390380053,
+    "refined_mean": 0.7395380835528682,
+    "refined_SD": 0.0019553964405324966,
+    "mean_delta": 0.007417069131898791,
+    "crossed_bootstrap_95CI": [
+      0.00409270991479291,
+      0.01132722094235806
+    ],
+    "paired_t_p": 0.013328690003711115,
+    "exact_signed_rank_p": 0.0625,
+    "bootstrap_draws": 50000,
+    "training_history": [
+      {
+        "dataset": "HRF",
+        "seed": 42,
+        "selected_epoch": 12,
+        "epochs_completed": 37,
+        "validation_dice": 0.7483202127291242,
+        "baseline_mean": 0.73311697385047,
+        "refined_mean": 0.7375030321155439,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-22-20"
+      },
+      {
+        "dataset": "HRF",
+        "seed": 123,
+        "selected_epoch": 26,
+        "epochs_completed": 51,
+        "validation_dice": 0.7474148717803927,
+        "baseline_mean": 0.7364287983887642,
+        "refined_mean": 0.7408309334802752,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-23-17"
+      },
+      {
+        "dataset": "HRF",
+        "seed": 2026,
+        "selected_epoch": 17,
+        "epochs_completed": 42,
+        "validation_dice": 0.7533341499322136,
+        "baseline_mean": 0.7323420974619724,
+        "refined_mean": 0.7417722335882103,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-24-25"
+      },
+      {
+        "dataset": "HRF",
+        "seed": 3000,
+        "selected_epoch": 45,
+        "epochs_completed": 70,
+        "validation_dice": 0.7468032073059341,
+        "baseline_mean": 0.7267262635151188,
+        "refined_mean": 0.7400915368736632,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-25-59"
+      },
+      {
+        "dataset": "HRF",
+        "seed": 3001,
+        "selected_epoch": 21,
+        "epochs_completed": 46,
+        "validation_dice": 0.746075154165,
+        "baseline_mean": 0.7319909388885218,
+        "refined_mean": 0.7374926817066486,
+        "parameters": 488145,
+        "completed_at": "2026-10-09_12-26-58"
+      }
+    ],
+    "identity_selections": 0,
+    "resampling": "Training seeds and images;HRF pathology-stratified;patient independence unverified",
+    "scope": "New retained-checkpoint experiment;not paired to supplied original diffusion outputs",
+    "holm_paired_t_p": 0.02665738000742223,
+    "holm_exact_signed_rank_p": 0.125
+  }
+]
