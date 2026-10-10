@@ -3,6 +3,7 @@
 !*/
 !README.md
 !.gitignore
+!.gitattributes
 !*.py
 !*.mjs
 !*.js

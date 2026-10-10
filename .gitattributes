@@ -1,0 +1,2 @@
+# Preserve revision archives and source manifests byte-for-byte.
+revise/** -text
