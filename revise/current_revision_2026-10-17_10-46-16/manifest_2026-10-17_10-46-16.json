@@ -1,0 +1,101 @@
+{
+  "files": [
+    {
+      "path": "last_2026-10-17_10-46-16.pdf",
+      "sha256": "b8be80b73875f5318cb3f1c0a00b06deef1b5987d18829e731f2a6cb442810c2"
+    },
+    {
+      "path": "README_2026-10-17_10-46-16.md",
+      "sha256": "12282da374a72da4f058acd45261ed01f8c810a1eb1d904fbe0d7563a1e6a24d"
+    },
+    {
+      "path": "Overleaf/last_2026-10-17_10-46-16.tex",
+      "sha256": "6a2daa6d87c2aed90ffa61ec4c74a655feb5906279d3d9dd47eb46631e1f46a0"
+    },
+    {
+      "path": "records/global_frozen_selected_records_2026-10-17_10-06-14.csv",
+      "sha256": "46c86279fd40bb30647906fef20d19193cba6eef1be9cd3c572026870fbbaf70"
+    },
+    {
+      "path": "records/image_training_means_2026-10-17_10-06-14.csv",
+      "sha256": "5c59cb4c4f9dc095e3788baed01ac1ba4935657dd553b174adc77521352c7a0c"
+    },
+    {
+      "path": "records/OOF_existing_summary_2026-10-17_10-06-14.csv",
+      "sha256": "c2a041dd4ac1da1aefb8ea77958064231f4311444aa5a1fd5c6bf5c53a36d510"
+    },
+    {
+      "path": "records/per_image_table6_global_frozen_2026-10-17_10-06-14.csv",
+      "sha256": "58a7369ab9bd6a6b55342c1fe018b63556c3d4a4a6f0a001950d617c16d748a3"
+    },
+    {
+      "path": "records/table6_paired_summary_2026-10-17_10-06-14.csv",
+      "sha256": "39a4b8b9643bc15ee97c5be398add61d4a73a9c9f7d6854bd99353d4466bb37f"
+    },
+    {
+      "path": "records/training_seed_means_2026-10-17_10-06-14.csv",
+      "sha256": "cd765765c076a7028fa5f7b3b5a53c545047205a679fc42f76a654f05b06949c"
+    },
+    {
+      "path": "Overleaf/Definitions/journalnames.tex",
+      "sha256": "c8c035b1980b852336584428b44499fdd1dc069c7be8985f258f2ef282775233"
+    },
+    {
+      "path": "Overleaf/Definitions/logo-mdpi-eps-converted-to.pdf",
+      "sha256": "c30423dff87979215ac79a0e52cd41a1a31a785e8f070e38392b8589f9c1cf56"
+    },
+    {
+      "path": "Overleaf/Definitions/logo-mdpi.eps",
+      "sha256": "f02d31469c6b2666c9de2da8d8731773bce3751d2fa99a27ff4bcf61a106cdcf"
+    },
+    {
+      "path": "Overleaf/Definitions/logo-orcid.pdf",
+      "sha256": "0558a0097dc4d1ffe3f4a1b3c9b4b98c6e568eac7d7439d447ca56ed1a8ec759"
+    },
+    {
+      "path": "Overleaf/Definitions/logo-updates.eps",
+      "sha256": "71ad8b00bcca718b62f3286af02ea56678e8199b5843d7ed4fdc86bd969c2809"
+    },
+    {
+      "path": "Overleaf/Definitions/mdpi.bst",
+      "sha256": "3b747eee144173c46a43562ead905c26322c7cb394e350a925d36dcf63884680"
+    },
+    {
+      "path": "Overleaf/Definitions/mdpi.cls",
+      "sha256": "658dbb5b2db2f6560bf3de3ecff7efac310a5817721eebd7539c1990b5345f01"
+    },
+    {
+      "path": "Overleaf/Definitions/mdpi_apacite.bst",
+      "sha256": "c7fffe0231922e5521dc360889fafe941ee26d154c1ce4e167e4ec9f2d13498f"
+    },
+    {
+      "path": "Overleaf/Definitions/mdpi_apacite.sty",
+      "sha256": "a77a994f978c1860ff14dbcae74631f3ed835b418adbdcf84de2f06d98c34599"
+    },
+    {
+      "path": "Overleaf/Definitions/mdpi_chicago.bst",
+      "sha256": "4a73faf6e0cf1a225d1b9a41a6955d3cc29a55c5fdce662177d00eee3946ce36"
+    },
+    {
+      "path": "Overleaf/Definitions/unicode.tex",
+      "sha256": "1a41f6c85db06401a4582008e6b8933c7212d17541497701797a55fe473d19e0"
+    },
+    {
+      "path": "Overleaf/realdata/flowchart260801-2.png",
+      "sha256": "578711c7fd5e6f8b6f4a8e3f4e890a8fe29d13891e4741955b8d480c46cdf60e"
+    },
+    {
+      "path": "Overleaf/realdata/flowchart_corrected_2026-10-15_14-14-14.png",
+      "sha256": "1cd6dde02fd2f2f637ebe473d564e63d59b5bfea67d32b5558d6fa19173a78d6"
+    },
+    {
+      "path": "Overleaf/assets/paper2/figure3_qualitative_comparison.png",
+      "sha256": "1cd261b72d49493d24c09a771de574b77497962f07b5a793326e70ffec70bcc2"
+    },
+    {
+      "path": "Overleaf/assets/paper2/figure4_zoomed_comparison.png",
+      "sha256": "9f2d3cb4621eb396e7e3afd5cca61f78e75905601d88797401bbe510fbaea55f"
+    }
+  ],
+  "scope": "Article-only editorial correction; numerical records unchanged. Reviewer correspondence and private ZIP excluded."
+}

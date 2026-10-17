@@ -6,7 +6,7 @@ Implementation code, experiment drivers and versioned records from the authors' 
 
 ## Current revision
 
-The [current manuscript, figures and numerical records](revise/current_revision_2026-10-17_10-29-17/README_2026-10-17_10-35-28.md) correspond to the **23-page MDPI revision**. The main title is retained; five contributions are reported. All results are in the article, including the per-image comparison and matched OOF experiment.
+The [current manuscript, figures and numerical records](revise/current_revision_2026-10-17_10-46-16/README_2026-10-17_10-46-16.md) correspond to the **23-page MDPI revision**. The main title is retained; five contributions are reported. All results are in the article, including the per-image comparison and matched OOF experiment.
 
 Table 6 compares the same coarse and global/frozen refined predictions at 50 DDIM updates. Its mean Dice ± SD across five training-seed means is copied below from the manuscript:
 
