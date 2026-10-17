@@ -216,26 +216,3 @@ class DRIVEDataset(VesselDataset):
 class HRFDataset(VesselDataset):
     def __init__(self, images_dir, masks_dir, img_size=(512, 512), coarse_dir=None, require_coarse=True, binarize_coarse=False):
         super().__init__(images_dir, masks_dir, img_size, coarse_dir, require_coarse, binarize_coarse, 'HRF')
-
-
-class DummyDriveDataset(Dataset):
-    """Small dummy dataset for debugging only. Never use for reported metrics."""
-
-    def __init__(self, n=4, img_size=(3, 128, 128)):
-        self.n = n
-        self.img_size = img_size
-
-    def __len__(self):
-        return self.n
-
-    def __getitem__(self, idx):
-        image = torch.rand(*self.img_size)
-        h, w = self.img_size[1], self.img_size[2]
-        mask = torch.zeros(1, h, w)
-        mask[:, h // 2 - 2:h // 2 + 2, :] = 1.0
-
-        # Deliberately imperfect coarse mask for debugging refinement behavior.
-        coarse = torch.zeros_like(mask)
-        coarse[:, h // 2 - 1:h // 2 + 1, :] = 1.0
-
-        return {'image': image, 'mask': mask, 'coarse': coarse, 'name': f'dummy_{idx}'}

@@ -2,7 +2,7 @@ import torch
 from torch.utils.data import DataLoader
 from torch import optim
 from pathlib import Path
-from .dataset2 import CHASEDataset, DummyDriveDataset, DRIVEDataset
+from .dataset2 import CHASEDataset, DRIVEDataset
 def train_drive(images_dir, masks_dir, epochs=5, batch_size=2, lr=2e-4):
     """Train diffusion refiner on DRIVE dataset."""
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -102,26 +102,13 @@ def train_chase(data_dir, epochs=5, batch_size=2, lr=2e-4):
     print(f"Saved checkpoint to {ckpt_path}")
 
 
-def test_dummy():
-    """Quick test on dummy data."""
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    ae = MaskAutoencoder(in_ch=1, base=32, latent_dim=64)
-    img_enc = ImageEncoder(in_ch=3, feat_dim=128)
-    unet = DiffusionUNet(dim=64, cond_dim=128)
-    model = LatentDiffusionModel(ae, img_enc, unet, cond_dim=128).to(device)
-    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-4)
-    ds = DummyDriveDataset(n=4, img_size=(3, 128, 128))
-    dl = DataLoader(ds, batch_size=2)
-    for batch in dl:
-        loss = train_step(model, optimizer, batch, device)
-        print('dummy loss', loss)
-
-
 if __name__ == '__main__':
     # Check if CHASE data exists
     chase_path = Path("data")
     if chase_path.exists():
         train_chase(chase_path, epochs=5, batch_size=2)
     else:
-        print("CHASE dataset not found; running dummy test instead...")
-        test_dummy()
+        raise FileNotFoundError(
+            "CHASE dataset not found. Configure real dataset paths; "
+            "automatic synthetic-data fallback is disabled."
+        )

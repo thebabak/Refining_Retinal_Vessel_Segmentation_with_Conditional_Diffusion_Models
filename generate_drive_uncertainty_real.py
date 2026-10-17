@@ -11,7 +11,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Generate DRIVE uncertainty visualization.")
     parser.add_argument("--images", type=str, required=True, help="Path to DRIVE images directory")
     parser.add_argument("--masks", type=str, required=True, help="Path to DRIVE masks directory")
-    parser.add_argument("--baseline-dir", type=str, default=None, help="Optional path to DRIVE coarse/baseline masks directory")
+    parser.add_argument("--baseline-dir", type=str, required=True, help="Path to real saved DRIVE coarse/baseline masks directory")
     parser.add_argument("--checkpoint", type=str, default="diffusion_refiner_checkpoint.pth", help="Checkpoint path")
     parser.add_argument("--output", type=str, default="plots/drive/drive_uncertainty.png", help="Output figure path")
     parser.add_argument("--num-samples", type=int, default=5, help="Number of ensemble samples")
@@ -23,6 +23,8 @@ def parse_args():
 
 def main():
     args = parse_args()
+    if not Path(args.baseline_dir).is_dir():
+        raise FileNotFoundError(f"Coarse prediction directory not found: {args.baseline_dir}")
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)

@@ -45,3 +45,20 @@ revise/new_spatial_refiner_DRIVE_HRF_2026-10-09_12-20-45/spatial_refiner_complet
 *.synctex.gz
 *.bbl
 *.blg
+
+# Local recovery archives and disposable caches
+/archive/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.pyo
+*.xdv
+*.nav
+*.snm
+*.vrb
+*.tmp
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store

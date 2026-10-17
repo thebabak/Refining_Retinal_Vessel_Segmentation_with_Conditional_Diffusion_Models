@@ -130,44 +130,8 @@ def _refine_single(model, image, coarse_mask, num_steps, guidance_scale, device)
 
 
 if __name__ == '__main__':
-    # Example: load checkpoint and refine a dummy mask
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    ckpt_path = Path("diffusion_refiner_checkpoint.pth")
-    
-    if ckpt_path.exists():
-        print(f"Loading checkpoint from {ckpt_path}...")
-        model = load_checkpoint(ckpt_path, device)
-        
-        # Create dummy image and coarse mask
-        image = torch.rand(3, 512, 512)
-        coarse_mask = torch.rand(1, 512, 512) > 0.8
-        
-        # Single refinement
-        print("Refining mask with DDIM sampling (50 steps)...")
-        refined = refine_mask(model, image, coarse_mask.float(), num_steps=50, device=device)
-        print(f"Refined mask shape: {refined.shape}, min={refined.min():.3f}, max={refined.max():.3f}")
-        
-        # Ensemble refinement with uncertainty
-        print("\n" + "="*60)
-        print("Ensemble Uncertainty Quantification")
-        print("="*60)
-        mean_mask, uncertainty, samples = refine_mask_ensemble(
-            model, image, coarse_mask.float(), 
-            num_samples=3, num_steps=30, device=device
-        )
-        
-        print(f"\nResults:")
-        print(f"  Mean mask shape: {mean_mask.shape}")
-        print(f"  Mean mask range: [{mean_mask.min():.3f}, {mean_mask.max():.3f}]")
-        print(f"  Uncertainty (variance) shape: {uncertainty.shape}")
-        print(f"  Uncertainty range: [{uncertainty.min():.6f}, {uncertainty.max():.6f}]")
-        print(f"  All samples shape: {samples.shape}")
-        
-        # Find high-uncertainty regions (potential error regions)
-        uncertainty_threshold = uncertainty.mean() + 1.0 * uncertainty.std()
-        high_uncertainty_regions = (uncertainty > uncertainty_threshold).sum().item()
-        total_pixels = uncertainty.numel()
-        print(f"\n  High-uncertainty pixels: {high_uncertainty_regions}/{total_pixels} ({100*high_uncertainty_regions/total_pixels:.1f}%)")
-        
-    else:
-        print(f"Checkpoint not found at {ckpt_path}")
+    raise SystemExit(
+        "No synthetic inference demo is run automatically. Import load_checkpoint "
+        "and refine_mask, and provide an actual RGB image, a saved coarse "
+        "prediction and the corresponding checkpoint."
+    )

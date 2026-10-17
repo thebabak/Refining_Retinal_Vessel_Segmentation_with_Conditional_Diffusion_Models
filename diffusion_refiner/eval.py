@@ -93,12 +93,13 @@ def evaluate_model(model, dataloader, device, num_steps=50, guidance_scale=1.5, 
         for batch_idx, batch in enumerate(dataloader):
             image = batch['image'].to(device)
             target_mask = batch['mask'].to(device)
-            coarse_mask = batch.get('baseline', None)
+            coarse_mask = batch.get('coarse')
             if coarse_mask is None:
-                coarse_mask = target_mask + 0.1 * torch.randn_like(target_mask)
-                coarse_mask = torch.clamp(coarse_mask, 0, 1)
-            else:
-                coarse_mask = coarse_mask.to(device)
+                raise ValueError(
+                    "A real coarse prediction is required in batch['coarse']. "
+                    "Reference masks and synthetic predictions are not fallbacks."
+                )
+            coarse_mask = coarse_mask.to(device)
 
             B = image.shape[0]
             
@@ -192,7 +193,7 @@ if __name__ == '__main__':
     parser.add_argument("--dataset", type=str, required=True, choices=["drive", "hrf"], help="Dataset type to evaluate.")
     parser.add_argument("--images", type=str, required=True, help="Folder containing input fundus images.")
     parser.add_argument("--masks", type=str, required=True, help="Folder containing ground-truth vessel masks.")
-    parser.add_argument("--baseline-dir", type=str, default=None, help="Optional folder containing coarse baseline predictions for refinement.")
+    parser.add_argument("--baseline-dir", type=str, required=True, help="Required folder containing actual coarse baseline predictions for refinement.")
     parser.add_argument("--checkpoint", type=str, required=True, help="Path to diffusion refiner checkpoint.")
     parser.add_argument("--output", type=str, default="evaluation_results.csv", help="Path to save detailed metrics CSV.")
     parser.add_argument("--batch-size", type=int, default=2)
@@ -201,6 +202,10 @@ if __name__ == '__main__':
     parser.add_argument("--num-steps", type=int, default=20, help="DDIM sampling steps.")
     parser.add_argument("--guidance-scale", type=float, default=1.5, help="Guidance scale for refinement.")
     args = parser.parse_args()
+
+    baseline_path = Path(args.baseline_dir)
+    if not baseline_path.is_dir():
+        raise FileNotFoundError(f"Coarse prediction directory not found: {baseline_path}")
 
     ckpt_path = Path(args.checkpoint)
     if not ckpt_path.exists():
@@ -221,8 +226,6 @@ if __name__ == '__main__':
     dl = DataLoader(ds, batch_size=args.batch_size, shuffle=False, num_workers=args.num_workers)
 
     print(f"Evaluating on {len(ds)} images from {args.dataset.upper()}...")
-    if args.baseline_dir is None:
-        print("Warning: no baseline directory provided. Using target mask as coarse input for refinement.")
 
     agg_metrics, detailed = evaluate_model(
         model,

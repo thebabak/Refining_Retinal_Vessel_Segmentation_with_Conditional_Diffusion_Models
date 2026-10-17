@@ -1,4 +1,4 @@
-"""Generate a CHASE-style DRIVE visualization with image, GT mask, synthetic coarse baseline, refined mean, and uncertainty."""
+"""Generate a CHASE-style DRIVE visualization with image, GT mask, saved coarse baseline, refined mean, and uncertainty."""
 from argparse import ArgumentParser
 from pathlib import Path
 
@@ -22,7 +22,7 @@ def parse_args():
     parser.add_argument("--num-steps", type=int, default=30, help="DDIM sampling steps")
     parser.add_argument("--guidance-scale", type=float, default=1.5, help="Guidance scale")
     parser.add_argument("--first-manual-dir", type=str, default="DRIVE/training/1st_manual", help="Path to 1st_manual masks")
-    parser.add_argument("--baseline-dir", type=str, default=None, help="Optional directory with baseline coarse predictions")
+    parser.add_argument("--baseline-dir", type=str, required=True, help="Directory containing real baseline coarse predictions")
     return parser.parse_args()
 
 
@@ -49,17 +49,6 @@ def find_matching_file_by_number(directory: Path, number_prefix: str):
     return None
 
 
-def make_synthetic_coarse(mask: np.ndarray) -> np.ndarray:
-    mask_bool = mask.astype(bool)
-    padded = np.pad(mask_bool, 1, mode="constant", constant_values=0)
-    eroded = np.ones_like(mask_bool, dtype=bool)
-    for dy in range(3):
-        for dx in range(3):
-            eroded &= padded[dy:dy + mask.shape[0], dx:dx + mask.shape[1]]
-    eroded = eroded.astype(np.uint8)
-    noise = np.random.RandomState(42).rand(*mask.shape) < 0.02
-    eroded[noise] = 0
-    return eroded.astype(np.float32)
 
 
 def main():
@@ -99,19 +88,15 @@ def main():
         except Exception:
             first_manual_np = None
 
-    # baseline: load real baseline if provided, otherwise synthesize
-    baseline_np = None
-    if args.baseline_dir:
-        baseline_dir = Path(args.baseline_dir)
-        b_file = find_matching_file_by_number(baseline_dir, number_prefix)
-        if b_file is not None:
-            try:
-                baseline_np = load_mask(b_file, args.img_size)
-                print(f"Loaded baseline prediction: {b_file}")
-            except Exception:
-                baseline_np = None
-
-    coarse_np = baseline_np if baseline_np is not None else make_synthetic_coarse(mask_np)
+    # A qualitative comparison requires the real coarse prediction for this image.
+    baseline_dir = Path(args.baseline_dir)
+    if not baseline_dir.is_dir():
+        raise FileNotFoundError(f"Baseline prediction directory not found: {baseline_dir}")
+    baseline_file = find_matching_file_by_number(baseline_dir, number_prefix)
+    if baseline_file is None:
+        raise FileNotFoundError(f"No saved coarse prediction for {image_path.name} in {baseline_dir}")
+    coarse_np = load_mask(baseline_file, args.img_size)
+    print(f"Loaded baseline prediction: {baseline_file}")
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     checkpoint_path = Path(args.checkpoint)

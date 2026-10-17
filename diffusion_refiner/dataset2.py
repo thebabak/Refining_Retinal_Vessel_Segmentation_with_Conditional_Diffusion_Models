@@ -95,8 +95,8 @@ class DRIVEDataset(Dataset):
             matching mask files
 
     The class tries to match masks by image stem.
-    If no real baseline is available, baseline is set as mask.clone().
-    Replace baseline with actual LU-Net+RA predictions if available.
+    Supply baseline_dir for actual coarse predictions. Without it, samples
+    contain image/mask pairs only and cannot be used for refiner evaluation.
     """
 
     def __init__(self, images_dir, masks_dir, img_size=(512, 512), baseline_dir=None):
@@ -173,18 +173,17 @@ class DRIVEDataset(Dataset):
 
         mask = self._load_mask(mask_path)
 
+        sample = {
+            "image": image,
+            "mask": mask,
+            "name": img_path.stem,
+        }
         if self.baseline_dir is not None:
             baseline_path = self._find_matching_file(self.baseline_dir, img_path)
             baseline = self._load_mask(baseline_path)
-        else:
-            baseline = mask.clone()
-
-        return {
-            "image": image,
-            "mask": mask,
-            "baseline": baseline,
-            "name": img_path.stem,
-        }
+            sample["baseline"] = baseline
+            sample["coarse"] = baseline
+        return sample
 
 
 class HRFDataset(Dataset):
@@ -198,7 +197,8 @@ class HRFDataset(Dataset):
             matching mask files
 
     If baseline_dir is provided, it loads baseline masks from there.
-    Otherwise baseline is set as mask.clone().
+    Without baseline_dir, samples contain image/mask pairs only; the reference
+    annotation is never substituted for a coarse prediction.
     """
 
     def __init__(self, images_dir, masks_dir, img_size=(512, 512), baseline_dir=None):
@@ -260,44 +260,14 @@ class HRFDataset(Dataset):
 
         mask = self._load_mask(mask_path)
 
+        sample = {
+            "image": image,
+            "mask": mask,
+            "name": img_path.stem,
+        }
         if self.baseline_dir is not None:
             baseline_path = self._find_matching_file(self.baseline_dir, img_path)
             baseline = self._load_mask(baseline_path)
-        else:
-            baseline = mask.clone()
-
-        return {
-            "image": image,
-            "mask": mask,
-            "baseline": baseline,
-            "name": img_path.stem,
-        }
-
-
-class DummyDriveDataset(Dataset):
-    """
-    Small dummy dataset for testing code only.
-    """
-
-    def __init__(self, n=4, img_size=(3, 128, 128)):
-        self.n = n
-        self.img_size = img_size
-
-    def __len__(self):
-        return self.n
-
-    def __getitem__(self, idx):
-        image = torch.rand(*self.img_size)
-
-        h, w = self.img_size[1], self.img_size[2]
-        mask = torch.zeros(1, h, w)
-
-        # Simple fake vessel-like line
-        mask[:, h // 2 - 2:h // 2 + 2, :] = 1.0
-
-        return {
-            "image": image,
-            "mask": mask,
-            "baseline": mask.clone(),
-            "name": f"dummy_{idx}",
-        }
+            sample["baseline"] = baseline
+            sample["coarse"] = baseline
+        return sample

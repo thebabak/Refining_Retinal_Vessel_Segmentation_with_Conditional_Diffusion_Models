@@ -10,7 +10,7 @@ import torch.nn.functional as F
 from torch import optim
 from torch.utils.data import DataLoader
 
-from .dataset2 import CHASEDataset, DummyDriveDataset, DRIVEDataset
+from .dataset2 import CHASEDataset, DRIVEDataset
 from .models import (
     MaskAutoencoder,
     ImageEncoder,
@@ -1092,76 +1092,6 @@ def save_metric_files(metric_rows, output_root):
 
 
 # ============================================================
-# Dummy test
-# ============================================================
-
-def test_dummy(seed=42):
-    set_seed(seed)
-
-    device = get_device()
-
-    print(f"Using device: {device}")
-    print(f"Using seed: {seed}")
-
-    dataset = DummyDriveDataset(
-        n=4,
-        img_size=(3, 128, 128),
-    )
-
-    dataloader = DataLoader(
-        dataset,
-        batch_size=2,
-        shuffle=True,
-        generator=make_generator(seed),
-        worker_init_fn=seed_worker,
-        num_workers=0,
-    )
-
-    ae, img_enc, unet, _ = build_models(device)
-
-    output_dir = Path("seed_outputs005") / "dummy" / f"seed_{seed}"
-    output_dir.mkdir(parents=True, exist_ok=True)
-
-    ae = train_autoencoder(
-        ae=ae,
-        dataloader=dataloader,
-        device=device,
-        epochs=2,
-        lr=1e-4,
-        save_path=output_dir / "dummy_ae_checkpoint.pth",
-    )
-
-    ae = freeze_autoencoder(ae)
-
-    model = LatentDiffusionModel(
-        ae,
-        img_enc,
-        unet,
-        cond_dim=128,
-    ).to(device)
-
-    model = train_diffusion_refiner(
-        model=model,
-        img_enc=img_enc,
-        unet=unet,
-        dataloader=dataloader,
-        device=device,
-        epochs=2,
-        lr=1e-4,
-        save_path=output_dir / "dummy_diffusion_checkpoint.pth",
-    )
-
-    save_uncertainty_figure(
-        model=model,
-        dataloader=dataloader,
-        device=device,
-        save_path=output_dir / "dummy_uncertainty_fixed.png",
-        K=8,
-        noise_strength=0.005,
-    )
-
-
-# ============================================================
 # Main
 # ============================================================
 
@@ -1237,8 +1167,10 @@ if __name__ == "__main__":
             all_report_rows.extend(report_rows)
 
     else:
-        print("CHASE dataset not found; running dummy test instead...")
-        test_dummy(seed=42)
+        raise FileNotFoundError(
+            "CHASE dataset not found. Configure real dataset paths; "
+            "automatic synthetic-data fallback is disabled."
+        )
 
     # ------------------------------------------------------------
     # DRIVE

@@ -8,7 +8,7 @@ import torch
 import torch.nn.functional as F
 from torch.utils.data import DataLoader
 
-from .dataset2 import CHASEDataset, DummyDriveDataset, DRIVEDataset
+from .dataset2 import CHASEDataset, DRIVEDataset
 from .models import (
     MaskAutoencoder,
     ImageEncoder,
@@ -764,73 +764,6 @@ def train_drive(
 
 
 # ============================================================
-# Dummy test
-# ============================================================
-
-def test_dummy(seed=42):
-    """
-    Quick test on dummy data.
-    """
-
-    set_seed(seed)
-
-    device = get_device()
-    print(f"Using device: {device}")
-    print(f"Using seed: {seed}")
-
-    ae = MaskAutoencoder(
-        in_ch=1,
-        base=32,
-        latent_dim=64,
-    )
-
-    img_enc = ImageEncoder(
-        in_ch=3,
-        feat_dim=128,
-    )
-
-    unet = DiffusionUNet(
-        dim=64,
-        cond_dim=128,
-    )
-
-    model = LatentDiffusionModel(
-        ae,
-        img_enc,
-        unet,
-        cond_dim=128,
-    ).to(device)
-
-    optimizer = torch.optim.AdamW(
-        model.parameters(),
-        lr=2e-4,
-    )
-
-    ds = DummyDriveDataset(
-        n=4,
-        img_size=(3, 128, 128),
-    )
-
-    dl = DataLoader(
-        ds,
-        batch_size=2,
-        shuffle=True,
-        generator=make_generator(seed),
-        num_workers=0,
-    )
-
-    for batch in dl:
-        loss = train_step(
-            model=model,
-            optimizer=optimizer,
-            batch=batch,
-            device=device,
-        )
-
-        print("dummy loss", loss)
-
-
-# ============================================================
 # CSV helpers
 # ============================================================
 
@@ -1139,8 +1072,10 @@ if __name__ == "__main__":
         )
 
     else:
-        print("CHASE dataset not found; running dummy test instead...")
-        test_dummy(seed=42)
+        raise FileNotFoundError(
+            "CHASE dataset not found. Configure real dataset paths; "
+            "automatic synthetic-data fallback is disabled."
+        )
 
     # ------------------------------------------------------------
     # DRIVE
