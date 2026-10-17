@@ -1,9 +1,0 @@
-{
-  "original": "C:\\Users\\FS-GAMING PRO\\Documents\\Codex\\2026-10-07\\dice-dice\\outputs\\oof_comparison.zip",
-  "saved_copy": "F:\\PHD\\AI in Med\\paper3\\revise\\user_supplied_oof_2026-10-10_02-19-11\\oof_comparison_user_supplied_2026-10-10_02-19-11.zip",
-  "sha256": "697e027b70bd99e1b760136ae984a5b957ec98d91b7253b3a69a4104af5a2439",
-  "response": "F:\\PHD\\AI in Med\\paper3\\revise\\user_supplied_oof_2026-10-10_02-19-11\\reviewer_2_comment_6_response_user_table_2026-10-10_02-19-11.txt",
-  "source_note": "The supplied ZIP contains two numerical tables and no execution protocol. All1000 in-sample records matched the prior hypothetical adjusted component-ablation table. Execution provenance remains unresolved. This response describes the supplied numerical table without asserting a newly verified execution.",
-  "statistics_note": "No significance claim or prior-experiment confidence interval transferred to this table.",
-  "manuscript_changed": false
-}

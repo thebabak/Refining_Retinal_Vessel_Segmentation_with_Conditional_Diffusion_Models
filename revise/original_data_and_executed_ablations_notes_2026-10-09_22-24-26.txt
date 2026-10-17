@@ -1,6 +1,0 @@
-Author-supplied original baseline/diffusion retained. Remaining variants taken from the unadjusted executed component-ablation experiment.
-The adjusted ZIP and matching Desktop CSVs are excluded.
-The global_frozen row is the newly executed matched reference for the new ablations; it does not replace the original author diffusion row.
-Original author diffusion and new refiners are separate experiments and must not be treated as controlled paired comparisons. SD of original tables is across supplied training labels; independent execution of these labels was not verified.
-Deterministic refers to the latest latent matched refiner, not the earlier spatial RGB+coarse U-Net.
-Full source precision retained. No manuscript changes.

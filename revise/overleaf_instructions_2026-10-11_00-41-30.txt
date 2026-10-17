@@ -1,9 +1,0 @@
-Use pdfLaTeX. Set template261006.tex as the Main document.
-The project compiles with MDPI Definitions when supplied, or uses article fallback when absent. Local tests covered the article fallback only.
-Fixed blank lines inside equations/tables and added fallback definitions for MDPI end-matter commands. Scientific text and values were preserved.
-Missing figures are shown as clearly labelled placeholders until original assets are uploaded:
-realdata/flowchart260801-2.png
-assets/paper2/figure3_qualitative_comparison.png
-assets/paper2/figure4_zoomed_comparison.png
-Placeholders are for compilation review and must be replaced before submission.
-Local pdfLaTeX completed three passes with no undefined references or fatal LaTeX errors. Some long lines still produce overfull-box warnings in article fallback.

@@ -1,7 +1,0 @@
-{
-  "trained_models": 105,
-  "verified_records": 7200,
-  "evaluation_modes": 8,
-  "completed_at": "2026-10-09_13-32-04",
-  "weights_and_FP32_predictions": "Retained in experiment subfolders;not included in tables-only ZIP"
-}

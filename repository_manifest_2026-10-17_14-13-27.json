@@ -1,0 +1,193 @@
+{
+  "timestamp_tehran": "2026-10-17_14-13-27",
+  "previous_commit": "b19a0ccf6d7b9c1dfa434b1d7ebee6b6136c4720",
+  "article_version": "2026-10-17_10-46-16",
+  "scope": "Current manuscript, supporting CSVs and selected experiment sources; private reviewer correspondence excluded.",
+  "no_scientific_recalculation": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "841c58734cabec571176e6d52c89be1e5c5a9c416ad69ddf760f1f90583ecc32"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "7325740037ae13902be33c98b659c00dc5f869920b03743020d38ab9a379e6ac"
+    },
+    {
+      "path": "diffusion_refiner/__init__.py",
+      "sha256": "155c0c911d7689eaf87992ffa7f1af9bc9be03ce9d1a4f88a1cfc285c01c47a2"
+    },
+    {
+      "path": "diffusion_refiner/models.py",
+      "sha256": "70bd254d9231bd8a2ac61bc66e60771f5b664c396ee64a95c65a1fe7544b47f6"
+    },
+    {
+      "path": "diffusion_refiner/README.md",
+      "sha256": "d18696c8cd3808f5dc17bd1e964359459194db59b4130b67e73c1f8e4d8b0d24"
+    },
+    {
+      "path": "diffusion_refiner/requirements.txt",
+      "sha256": "0d6be4dbf5d3fa2bfb9381371e4fc32925ca93559f0ded34db89a0b19c66e74c"
+    },
+    {
+      "path": "diffusion_refiner/utils.py",
+      "sha256": "96e0a02cc6280cc9484383bb05beef61e4150cf77d66f8491ff7ce6cc3d3d5a6"
+    },
+    {
+      "path": "manuscript/last_2026-10-17_10-46-16.pdf",
+      "sha256": "b8be80b73875f5318cb3f1c0a00b06deef1b5987d18829e731f2a6cb442810c2"
+    },
+    {
+      "path": "manuscript/Overleaf/assets/paper2/figure3_qualitative_comparison.png",
+      "sha256": "1cd261b72d49493d24c09a771de574b77497962f07b5a793326e70ffec70bcc2"
+    },
+    {
+      "path": "manuscript/Overleaf/assets/paper2/figure4_zoomed_comparison.png",
+      "sha256": "9f2d3cb4621eb396e7e3afd5cca61f78e75905601d88797401bbe510fbaea55f"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/journalnames.tex",
+      "sha256": "c8c035b1980b852336584428b44499fdd1dc069c7be8985f258f2ef282775233"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/logo-mdpi-eps-converted-to.pdf",
+      "sha256": "c30423dff87979215ac79a0e52cd41a1a31a785e8f070e38392b8589f9c1cf56"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/logo-mdpi.eps",
+      "sha256": "f02d31469c6b2666c9de2da8d8731773bce3751d2fa99a27ff4bcf61a106cdcf"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/logo-orcid.pdf",
+      "sha256": "0558a0097dc4d1ffe3f4a1b3c9b4b98c6e568eac7d7439d447ca56ed1a8ec759"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/logo-updates.eps",
+      "sha256": "71ad8b00bcca718b62f3286af02ea56678e8199b5843d7ed4fdc86bd969c2809"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/mdpi.bst",
+      "sha256": "3b747eee144173c46a43562ead905c26322c7cb394e350a925d36dcf63884680"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/mdpi.cls",
+      "sha256": "658dbb5b2db2f6560bf3de3ecff7efac310a5817721eebd7539c1990b5345f01"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/mdpi_apacite.bst",
+      "sha256": "c7fffe0231922e5521dc360889fafe941ee26d154c1ce4e167e4ec9f2d13498f"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/mdpi_apacite.sty",
+      "sha256": "a77a994f978c1860ff14dbcae74631f3ed835b418adbdcf84de2f06d98c34599"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/mdpi_chicago.bst",
+      "sha256": "4a73faf6e0cf1a225d1b9a41a6955d3cc29a55c5fdce662177d00eee3946ce36"
+    },
+    {
+      "path": "manuscript/Overleaf/Definitions/unicode.tex",
+      "sha256": "1a41f6c85db06401a4582008e6b8933c7212d17541497701797a55fe473d19e0"
+    },
+    {
+      "path": "manuscript/Overleaf/last_2026-10-17_10-46-16.tex",
+      "sha256": "6a2daa6d87c2aed90ffa61ec4c74a655feb5906279d3d9dd47eb46631e1f46a0"
+    },
+    {
+      "path": "manuscript/Overleaf/realdata/flowchart260801-2.png",
+      "sha256": "578711c7fd5e6f8b6f4a8e3f4e890a8fe29d13891e4741955b8d480c46cdf60e"
+    },
+    {
+      "path": "manuscript/Overleaf/realdata/flowchart_corrected_2026-10-15_14-14-14.png",
+      "sha256": "1cd6dde02fd2f2f637ebe473d564e63d59b5bfea67d32b5558d6fa19173a78d6"
+    },
+    {
+      "path": "paired_reproduction/benchmark_cuda_events.py",
+      "sha256": "63f981063c6c0fe9457789818514a0f6fc9342414958cdb95cc671efd8405268"
+    },
+    {
+      "path": "paired_reproduction/benchmark_pipeline.py",
+      "sha256": "d5a4f8f25938d3721fa50c0164a99ca737bdeb25887b3e48e2b3f4ae83706d3a"
+    },
+    {
+      "path": "paired_reproduction/ddim_variability.py",
+      "sha256": "a509dddd9a13ff18cf56be9ae8cf610e6fd5585642984a9234f60115152f1b00"
+    },
+    {
+      "path": "paired_reproduction/official_model.py",
+      "sha256": "881a7d330af9aa4d8e0b87cdd326bd174f2a180878ae89ec9e5e75205d25ce9a"
+    },
+    {
+      "path": "paired_reproduction/parallel_component_workers.py",
+      "sha256": "73e651ca6c88747b4ab9a0d0c270fc08cd71fcfdfa88bd44dc01dff372d2c559"
+    },
+    {
+      "path": "paired_reproduction/report_all_datasets_full_runs.py",
+      "sha256": "fb0131d4e180b27f235752010578b39b0c303205d471154423ab2635389c94ff"
+    },
+    {
+      "path": "paired_reproduction/report_component_ablations.py",
+      "sha256": "326761ccd7db09ba210fed33b679e7bdca0b65cb6092d96e810ee843a21bb6ec"
+    },
+    {
+      "path": "paired_reproduction/run.py",
+      "sha256": "08a986392ddd329ea36e878ff954564e207319ea9dc86dd9b3c85abd7a551a7c"
+    },
+    {
+      "path": "paired_reproduction/run_all_datasets_five_full_runs.py",
+      "sha256": "f7886c4e03d5aea8fb85434501e808f5174b4e099bf6db6fb6444840e14cd291"
+    },
+    {
+      "path": "paired_reproduction/run_component_ablations.py",
+      "sha256": "e03480fb594a8ecc3237905b70dbfe7f5ef0d99347ec340e1c9f534aae4ad427"
+    },
+    {
+      "path": "paired_reproduction/run_drive.py",
+      "sha256": "7b0ff54e7eafacd037f47cf1dc4fbb21353b4c5d21303ca56d85b199ff706dfe"
+    },
+    {
+      "path": "paired_reproduction/run_hrf_baseline.py",
+      "sha256": "ca7bb2b98c8a76f18c20cb582c7d3575309086040c6351a1a0e0073cfc47bb05"
+    },
+    {
+      "path": "paired_reproduction/run_oof_comparison.py",
+      "sha256": "3d219508bffa003b1a4e3469b592655eaef9e52c491d6d7362e48986ab7aa363"
+    },
+    {
+      "path": "paired_reproduction/run_spatial_refiner_drive_hrf.py",
+      "sha256": "5586046ddbcdb3d85ddedd24deb75a2b3323c835ebcca11260fa481663f5548b"
+    },
+    {
+      "path": "paired_reproduction/run_spatial_residual_refiner.py",
+      "sha256": "76501ac763172a25b332fe4fa8ecff3a289af5d9bed0ac7e4621f3de4fd459b4"
+    },
+    {
+      "path": "README.md",
+      "sha256": "79046f22ce244a5b053f3e767e722c3183069c5f749b9c61e24dcd356c6b8007"
+    },
+    {
+      "path": "results/global_frozen_selected_records_2026-10-17_10-06-14.csv",
+      "sha256": "46c86279fd40bb30647906fef20d19193cba6eef1be9cd3c572026870fbbaf70"
+    },
+    {
+      "path": "results/image_training_means_2026-10-17_10-06-14.csv",
+      "sha256": "5c59cb4c4f9dc095e3788baed01ac1ba4935657dd553b174adc77521352c7a0c"
+    },
+    {
+      "path": "results/OOF_existing_summary_2026-10-17_10-06-14.csv",
+      "sha256": "c2a041dd4ac1da1aefb8ea77958064231f4311444aa5a1fd5c6bf5c53a36d510"
+    },
+    {
+      "path": "results/per_image_table6_global_frozen_2026-10-17_10-06-14.csv",
+      "sha256": "58a7369ab9bd6a6b55342c1fe018b63556c3d4a4a6f0a001950d617c16d748a3"
+    },
+    {
+      "path": "results/table6_paired_summary_2026-10-17_10-06-14.csv",
+      "sha256": "39a4b8b9643bc15ee97c5be398add61d4a73a9c9f7d6854bd99353d4466bb37f"
+    },
+    {
+      "path": "results/training_seed_means_2026-10-17_10-06-14.csv",
+      "sha256": "cd765765c076a7028fa5f7b3b5a53c545047205a679fc42f76a654f05b06949c"
+    }
+  ]
+}

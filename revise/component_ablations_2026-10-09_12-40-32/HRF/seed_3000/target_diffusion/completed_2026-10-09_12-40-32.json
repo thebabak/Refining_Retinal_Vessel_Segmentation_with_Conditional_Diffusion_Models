@@ -1,7 +1,0 @@
-{
-  "variant": "target_diffusion",
-  "records": 120,
-  "checkpoint_sha256": "e8e372fb5e8d7b58d31d6fcc99aa1d7738da3b0a815711b93be14764f1059c33",
-  "completed_at": "2026-10-09_12-59-29",
-  "updated_parameters": 405824
-}

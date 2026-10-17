@@ -1,7 +1,0 @@
-{
-  "variant": "deterministic",
-  "records": 8,
-  "checkpoint_sha256": "1edf4940359e92e28276b806ee83698aaa51fff4a09740bd7a74af34c7e35190",
-  "completed_at": "2026-10-09_12-41-12",
-  "updated_parameters": 405824
-}

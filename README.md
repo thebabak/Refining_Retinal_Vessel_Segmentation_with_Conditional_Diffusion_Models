@@ -1,14 +1,21 @@
 # Refining Retinal Vessel Segmentation with Conditional Diffusion Models
 
-**A Controlled Evaluation on LU-Net+RA Probability Maps**
+## A Controlled Evaluation on LU-Net+RA Probability Maps
 
-Implementation code, experiment drivers and versioned records from the authors' retinal vessel segmentation study.
+This repository contains the authors' current manuscript, its supporting numerical records, and the experiment source code used by the controlled reference and related studies. Earlier revision packages and development utilities have been removed from the current branch. Previous Git commits and local source archives are preserved.
 
-## Current revision
+## Manuscript
 
-The [current manuscript, figures and numerical records](revise/current_revision_2026-10-17_10-46-16/README_2026-10-17_10-46-16.md) correspond to the **23-page MDPI revision**. The main title is retained; five contributions are reported. All results are in the article, including the per-image comparison and matched OOF experiment.
+- [Latest article PDF](manuscript/last_2026-10-17_10-46-16.pdf) — 23 pages.
+- [Latest LaTeX source](manuscript/Overleaf/last_2026-10-17_10-46-16.tex).
+- [Complete Overleaf source directory](manuscript/Overleaf/) — upload its contents and select the article TEX as the main document. The MDPI class and figure assets are included.
+- [Existing supporting CSV records](results/) — primary, per-image, training-seed and matched OOF summaries. These are copied unchanged; no calculation was rerun during repository rebuilding.
 
-Table 6 compares the same coarse and global/frozen refined predictions at 50 DDIM updates. Its mean Dice ± SD across five training-seed means is copied below from the manuscript:
+The article version is 2026-10-17_10-46-16. This repository reorganisation does not alter its contents, numerical values, tables or figures.
+
+## Current results
+
+Table 6 compares coarse LU-Net+RA with the matched component-study `global_frozen` reference at 50 DDIM updates. Mean Dice ± sample SD across five training-seed means:
 
 | Dataset | Coarse LU-Net+RA | Global/frozen diffusion refiner |
 | --- | --- | --- |
@@ -16,26 +23,24 @@ Table 6 compares the same coarse and global/frozen refined predictions at 50 DDI
 | DRIVE | 0.791814 ± 0.007557 | 0.789757 ± 0.008286 |
 | HRF | 0.732121 ± 0.003490 | 0.665726 ± 0.006320 |
 
-The tested reference does not improve mean Dice. Table 6 includes exploratory paired 95% intervals; Tables 7–9 provide all per-image means; Table 10 reports the matched OOF comparison. OOF nonsignificance does not establish equivalence or remove the training-input-shift concern. Historical positive single-run scores are not current efficacy results.
+The tested reference does not improve mean Dice. Table 6 includes exploratory paired confidence intervals; Tables 7–9 contain per-image means; Table 10 reports the matched OOF comparison. OOF nonsignificance does not establish equivalence or rule out training-input shift. Historical positive tables and the separate full-pipeline reproduction are not interchangeable with this reference.
 
-## Which code matches the manuscript?
+## Code mapped to the manuscript
 
-| Manuscript content | Implementation |
+| Study | Source |
 | --- | --- |
-| Reference and component study, Tables 6 and 11 | [run_component_ablations.py](paired_reproduction/run_component_ablations.py), `global_frozen` reference |
-| Shared model and data/training definitions | [models.py](diffusion_refiner/models.py), [run.py](paired_reproduction/run.py), [run_drive.py](paired_reproduction/run_drive.py), [run_hrf_baseline.py](paired_reproduction/run_hrf_baseline.py), [official_model.py](paired_reproduction/official_model.py) |
+| Matched reference and components, Tables 6 and 11 | [run_component_ablations.py](paired_reproduction/run_component_ablations.py), `global_frozen` reference; [report_component_ablations.py](paired_reproduction/report_component_ablations.py) |
+| Shared model, data and baseline training | [models.py](diffusion_refiner/models.py), [run.py](paired_reproduction/run.py), [run_drive.py](paired_reproduction/run_drive.py), [run_hrf_baseline.py](paired_reproduction/run_hrf_baseline.py), [official_model.py](paired_reproduction/official_model.py) |
 | Matched OOF, Table 10 | [run_oof_comparison.py](paired_reproduction/run_oof_comparison.py) |
-| Spatial control, Table 12 | [CHASE driver](paired_reproduction/run_spatial_residual_refiner.py), [DRIVE/HRF driver](paired_reproduction/run_spatial_refiner_drive_hrf.py) |
-| Fixed-checkpoint 50/100-update study, Section 4.8 | [ddim_variability.py](paired_reproduction/ddim_variability.py) |
-| Complete-pipeline / CUDA-event timing, Section 4.9 | [benchmark_pipeline.py](paired_reproduction/benchmark_pipeline.py), [benchmark_cuda_events.py](paired_reproduction/benchmark_cuda_events.py) |
+| Spatial control, Table 12 | [CHASE](paired_reproduction/run_spatial_residual_refiner.py), [DRIVE/HRF](paired_reproduction/run_spatial_refiner_drive_hrf.py) |
+| Fixed-checkpoint sampling, Section 4.8 | [ddim_variability.py](paired_reproduction/ddim_variability.py) |
+| Wall-clock and CUDA-event timing, Section 4.9 | [benchmark_pipeline.py](paired_reproduction/benchmark_pipeline.py), [benchmark_cuda_events.py](paired_reproduction/benchmark_cuda_events.py) |
 
-The manuscript reference starts coarse-initialised diffusion at stored index 99; the Gaussian-start target ablation starts at 999, and the deterministic control uses no DDIM. Independent training runs and repeated initial-noise sampling are separate sources of variation. The reference, spatial control and fixed-checkpoint timing experiments have different training/measurement protocols; use the corresponding manuscript section.
+`run_all_datasets_five_full_runs.py` supplies the composition helper used by the matched study drivers. Its separate full-pipeline outputs must not be used as Table 6 results. The corresponding report helper is retained as a code dependency.
 
-`diffusion_refiner/` also contains legacy implementations and utilities. Read its [module notes](diffusion_refiner/README.md); the legacy evaluation CLI is not the complete Table 6 evaluator. The separate full-pipeline rerun must not be confused with the matched component-study reference. Historical records in `revise/` and frozen executed-source snapshots are retained for provenance, not as interchangeable current results.
+The coarse-initialised reference starts at index 99; the target Gaussian-start ablation starts at 999; deterministic controls do not use DDIM. Repeated initial-noise sampling is distinct from independently trained models. The fixed-checkpoint and timing studies have separate protocols and sessions.
 
-## Setup and prerequisites
-
-Install the existing [dependencies](diffusion_refiner/requirements.txt) in a separate environment:
+## Setup and required artifacts
 
 ```powershell
 python -m venv .venv
@@ -43,14 +48,10 @@ python -m venv .venv
 python -m pip install -r diffusion_refiner/requirements.txt
 ```
 
-The manuscript experiment drivers require CUDA, matching data layouts, split/protocol files and the retained baseline/autoencoder checkpoints. Obtain CHASE-DB1, DRIVE and HRF from their original providers and follow their terms. Installing dependencies does not download datasets or checkpoints. Inspect a driver and its artifact prerequisites before running it; there is no claim that a fresh clone alone reproduces every historical result.
+Obtain the datasets from their original providers. The experiment scripts require CUDA and the matching dataset layout, protocol/split files, baseline and autoencoder checkpoints, and, where applicable, saved predictions. Historical relative artifact locations are still present in the scripts: restore the corresponding artifacts there or configure the paths before running. Installing dependencies or cloning this repository alone does not supply those artifacts or reproduce the results. No experiment is run automatically by this repository.
 
-## Availability and historical material
+Weights, dataset images and raw probability arrays are not included. Refer to the article's availability statement for retained artifacts; the complete probability arrays for every fixed-checkpoint sampling repeat were not retained. No model training, evaluation, timing or statistical calculation was performed for this repository reorganisation.
 
-The current revision folder contains byte-preserved sources, class/figure assets, PDFs and existing numerical CSVs. Model weights, dataset images and raw probability arrays are not included in this source release; the manuscript describes how to request retained artifacts. Complete arrays for every repeat of the fixed-checkpoint sampling experiment were not retained. Code or a numerical table alone does not substitute for those artifacts.
+## Private correspondence
 
-Dummy datasets/helpers, synthetic-only training utilities, hypothetical plotting scripts, obsolete January documents, unused demo configuration and duplicate `ALL/` code have been removed from the active tree. Retained figure CLIs require real saved coarse predictions. Missing coarse inputs raise an error; reference annotations are not silently substituted. Historical Git versions and frozen experiment snapshots remain provenance records. Local recovery archives and caches are ignored by Git.
-
-This update copies existing manuscript values and records and cleans code/documentation. It performs no training, prediction evaluation, statistical recalculation or timing measurement. Overleaf is not updated automatically by publishing this repository.
-
-Reviewer-response letters are shared privately and are excluded from the current repository, including earlier response-bearing ZIP packages. Local copies remain available to the authors. Previous commits are preserved.
+Reviewer responses and the complete private submission ZIP are deliberately excluded. The current branch contains no dummy datasets, obsolete revision bundles or reviewer-response files. Earlier commits remain in Git history; this update does not erase that history. Overleaf is not updated automatically.
