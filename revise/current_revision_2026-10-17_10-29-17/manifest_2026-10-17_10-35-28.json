@@ -5,16 +5,16 @@
       "sha256": "b1f75e243041d6ee64683de6df151004ac3f569c45ee2caea9fcd8d7a05572ea"
     },
     {
-      "path": "responses_to_reviewers_2026-10-17_10-21-07.pdf",
-      "sha256": "db5cc065ecf65b8e2e5027fd7945c5cfb7e5f7ff58d5b3f38a7ba96501c38ef7"
+      "path": "publication_checks_2026-10-17_10-29-17.json",
+      "sha256": "4e8f6b87aab3efa12ecabddb9e385ecb9e0d00db95e0783bfec4c9dcd84f18bb"
+    },
+    {
+      "path": "README_2026-10-17_10-35-28.md",
+      "sha256": "8d7b3413b46ec084ae3832bfdd6aa96405fa777c5d3c54953314a17255442db7"
     },
     {
       "path": "Overleaf/last_2026-10-17_10-17-58.tex",
       "sha256": "13e05918854fad8a819de3a5b872954c2e9a67de20da93fcffaa6b38c72e26ac"
-    },
-    {
-      "path": "Overleaf/responses_to_reviewers_2026-10-17_10-21-07.tex",
-      "sha256": "b8fb116449c96a644e837a1f664ad0df592704e8a08df43251d5d6472a68f8b5"
     },
     {
       "path": "records/global_frozen_selected_records_2026-10-17_10-06-14.csv",
@@ -101,5 +101,5 @@
       "sha256": "9f2d3cb4621eb396e7e3afd5cca61f78e75905601d88797401bbe510fbaea55f"
     }
   ],
-  "scope": "Byte-preserved current manuscript/response, figure/class assets and already calculated Table 6/OOF records. No statistical recalculation, training, prediction evaluation or timing."
+  "scope": "Current manuscript, figures/class assets and unchanged existing numerical records. Reviewer-response artifacts and response-bearing bundles are excluded. No statistical recalculation."
 }

@@ -1,5 +1,0 @@
-Draft response to Reviewer 2, Comment 3 ? not a completed-experiment response
-
-Thank you for this comment. We agree that comparison with the coarse LU-Net+RA prediction alone does not isolate the benefit of diffusion. Our supplied evaluation tables contain paired coarse and diffusion results, but no results for a matched deterministic learned refiner or same-protocol evaluations of HiDiffSeg, RefineCatDiff, or Li et al. Therefore, the current data do not establish superiority over these refinement alternatives or demonstrate that the improvement is specific to the diffusion formulation. Architectural differences are not sufficient evidence that reproduction is impossible. A matched deterministic control and a documented related-method comparison remain required.
-
-No completed controlled experiment is claimed in this draft. This draft must be updated if new matched experimental outputs become available.

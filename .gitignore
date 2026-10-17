@@ -62,3 +62,19 @@ revise/new_spatial_refiner_DRIVE_HRF_2026-10-09_12-20-45/spatial_refiner_complet
 Thumbs.db
 Desktop.ini
 .DS_Store
+
+# Reviewer correspondence is local/private; do not republish it.
+**/responses_to_reviewers*
+**/reviewer_*response*
+**/reviewer_*.txt
+
+# Earlier response-bearing bundles and superseded release metadata stay local.
+/revise/component_ablations_2026-10-09_12-40-32/component_ablation_tables_2026-10-09_12-40-32.zip
+/revise/component_ablations_all_results_2026-10-09_21-57-06.zip
+/revise/last_overleaf_2026-10-11_00-56-22.zip
+/revise/last_overleaf_2026-10-11_16-20-45.zip
+/revise/oof_comparison_2026-10-09_23-30-40/oof_comparison_results_2026-10-10_00-17-03.zip
+/revise/oof_comparison_2026-10-09_23-30-40/oof_comparison_results_2026-10-10_00-17-27.zip
+/revise/oof_comparison_2026-10-09_23-30-40/oof_comparison_with_author_results_2026-10-10_01-35-49.zip
+/revise/current_revision_2026-10-17_10-29-17/README_2026-10-17_10-29-17.md
+/revise/current_revision_2026-10-17_10-29-17/manifest_2026-10-17_10-29-17.json

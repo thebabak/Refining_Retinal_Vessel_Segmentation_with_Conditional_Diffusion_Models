@@ -1,3 +1,0 @@
-Response to Reviewer 2, Comment 6 ? based on the author-supplied OOF table
-
-Thank you for this comment. We compared the in-sample and out-of-fold training conditions using the supplied evaluation table. Mean Dice was 0.835000823 versus 0.834744638 on CHASE-DB1, 0.834999991 versus 0.834848863 on DRIVE, and 0.793000223 versus 0.792757712 on HRF, respectively. The corresponding out-of-fold minus in-sample differences were -0.000256185, -0.000151128, and -0.000242510. Thus, the supplied table shows small decreases under out-of-fold training. These descriptive differences do not establish equivalence or rule out train-test distribution shift.

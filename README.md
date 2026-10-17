@@ -6,7 +6,7 @@ Implementation code, experiment drivers and versioned records from the authors' 
 
 ## Current revision
 
-The [current manuscript, complete reviewer responses, figures and numerical records](revise/current_revision_2026-10-17_10-29-17/README_2026-10-17_10-29-17.md) correspond to the **23-page MDPI revision**. The main title is retained; five contributions are reported. All results are in the article, including the per-image comparison and matched OOF experiment.
+The [current manuscript, figures and numerical records](revise/current_revision_2026-10-17_10-29-17/README_2026-10-17_10-35-28.md) correspond to the **23-page MDPI revision**. The main title is retained; five contributions are reported. All results are in the article, including the per-image comparison and matched OOF experiment.
 
 Table 6 compares the same coarse and global/frozen refined predictions at 50 DDIM updates. Its mean Dice ± SD across five training-seed means is copied below from the manuscript:
 
@@ -52,3 +52,5 @@ The current revision folder contains byte-preserved sources, class/figure assets
 Dummy datasets/helpers, synthetic-only training utilities, hypothetical plotting scripts, obsolete January documents, unused demo configuration and duplicate `ALL/` code have been removed from the active tree. Retained figure CLIs require real saved coarse predictions. Missing coarse inputs raise an error; reference annotations are not silently substituted. Historical Git versions and frozen experiment snapshots remain provenance records. Local recovery archives and caches are ignored by Git.
 
 This update copies existing manuscript values and records and cleans code/documentation. It performs no training, prediction evaluation, statistical recalculation or timing measurement. Overleaf is not updated automatically by publishing this repository.
+
+Reviewer-response letters are shared privately and are excluded from the current repository, including earlier response-bearing ZIP packages. Local copies remain available to the authors. Previous commits are preserved.
