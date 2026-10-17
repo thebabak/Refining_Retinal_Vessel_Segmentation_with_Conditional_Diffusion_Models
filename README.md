@@ -13,6 +13,12 @@ This repository contains the authors' current manuscript, its supporting numeric
 
 The article version is 2026-10-17_10-46-16. This repository reorganisation does not alter its contents, numerical values, tables or figures.
 
+## Framework diagram
+
+![Two-stage retinal vessel segmentation framework](manuscript/figures/proposed_framework_2026-10-17_14-41-56.png)
+
+[Download the author-supplied framework diagram](manuscript/figures/proposed_framework_2026-10-17_14-41-56.png). This separately supplied image is included as provided; the compiled article and its LaTeX source are unchanged.
+
 ## Current results
 
 Table 6 compares coarse LU-Net+RA with the matched component-study `global_frozen` reference at 50 DDIM updates. Mean Dice ± sample SD across five training-seed means:
