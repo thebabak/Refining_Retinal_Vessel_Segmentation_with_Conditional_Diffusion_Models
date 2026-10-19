@@ -1,8 +1,8 @@
 {
-  "timestamp_tehran": "2026-10-17_14-13-27",
-  "previous_commit": "b19a0ccf6d7b9c1dfa434b1d7ebee6b6136c4720",
-  "article_version": "2026-10-17_10-46-16",
-  "scope": "Current manuscript, supporting CSVs and selected experiment sources; private reviewer correspondence excluded.",
+  "timestamp_tehran": "2026-10-19_17-56-29",
+  "previous_commit": "4b72bef2186e4be403dcea9899d52d0562600094",
+  "article_version": "2026-10-19_17-56-29",
+  "scope": "Clarification of retained earlier-run qualitative panels; scientific numbers and tables unchanged. Reviewer responses and full package remain private.",
   "no_scientific_recalculation": true,
   "files": [
     {
@@ -11,7 +11,15 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "7325740037ae13902be33c98b659c00dc5f869920b03743020d38ab9a379e6ac"
+      "sha256": "183adf86916b4a2cdcc57d94cec847bf8eed74998afeb36536d786840f4d6b3d"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6690fa69bad330373b6e0c7c25a05a6b1a8cc534c252d91b1938ad12dabb0654"
+    },
+    {
+      "path": "diffusion_refiner/README.md",
+      "sha256": "d18696c8cd3808f5dc17bd1e964359459194db59b4130b67e73c1f8e4d8b0d24"
     },
     {
       "path": "diffusion_refiner/__init__.py",
@@ -22,28 +30,12 @@
       "sha256": "70bd254d9231bd8a2ac61bc66e60771f5b664c396ee64a95c65a1fe7544b47f6"
     },
     {
-      "path": "diffusion_refiner/README.md",
-      "sha256": "d18696c8cd3808f5dc17bd1e964359459194db59b4130b67e73c1f8e4d8b0d24"
-    },
-    {
       "path": "diffusion_refiner/requirements.txt",
       "sha256": "0d6be4dbf5d3fa2bfb9381371e4fc32925ca93559f0ded34db89a0b19c66e74c"
     },
     {
       "path": "diffusion_refiner/utils.py",
       "sha256": "96e0a02cc6280cc9484383bb05beef61e4150cf77d66f8491ff7ce6cc3d3d5a6"
-    },
-    {
-      "path": "manuscript/last_2026-10-17_10-46-16.pdf",
-      "sha256": "b8be80b73875f5318cb3f1c0a00b06deef1b5987d18829e731f2a6cb442810c2"
-    },
-    {
-      "path": "manuscript/Overleaf/assets/paper2/figure3_qualitative_comparison.png",
-      "sha256": "1cd261b72d49493d24c09a771de574b77497962f07b5a793326e70ffec70bcc2"
-    },
-    {
-      "path": "manuscript/Overleaf/assets/paper2/figure4_zoomed_comparison.png",
-      "sha256": "9f2d3cb4621eb396e7e3afd5cca61f78e75905601d88797401bbe510fbaea55f"
     },
     {
       "path": "manuscript/Overleaf/Definitions/journalnames.tex",
@@ -90,8 +82,16 @@
       "sha256": "1a41f6c85db06401a4582008e6b8933c7212d17541497701797a55fe473d19e0"
     },
     {
-      "path": "manuscript/Overleaf/last_2026-10-17_10-46-16.tex",
-      "sha256": "6a2daa6d87c2aed90ffa61ec4c74a655feb5906279d3d9dd47eb46631e1f46a0"
+      "path": "manuscript/Overleaf/assets/paper2/figure3_qualitative_comparison.png",
+      "sha256": "1cd261b72d49493d24c09a771de574b77497962f07b5a793326e70ffec70bcc2"
+    },
+    {
+      "path": "manuscript/Overleaf/assets/paper2/figure4_zoomed_comparison.png",
+      "sha256": "9f2d3cb4621eb396e7e3afd5cca61f78e75905601d88797401bbe510fbaea55f"
+    },
+    {
+      "path": "manuscript/Overleaf/last_2026-10-19_17-56-29.tex",
+      "sha256": "0a7934eef5735c96fb383185ec614ae6a89a21f0a99b61e2303009b7c05fb107"
     },
     {
       "path": "manuscript/Overleaf/realdata/flowchart260801-2.png",
@@ -100,6 +100,14 @@
     {
       "path": "manuscript/Overleaf/realdata/flowchart_corrected_2026-10-15_14-14-14.png",
       "sha256": "1cd6dde02fd2f2f637ebe473d564e63d59b5bfea67d32b5558d6fa19173a78d6"
+    },
+    {
+      "path": "manuscript/figures/proposed_framework_2026-10-17_14-41-56.png",
+      "sha256": "d082758da0f06b8d26373ccf385bc953120338fd79c6133d06bb04a05ee43bfc"
+    },
+    {
+      "path": "manuscript/last_2026-10-19_17-56-29.pdf",
+      "sha256": "6a8f6135f3b6d5a3f436f4a8d350ff1c0d515a5505c3e0829cf298e5038c06f3"
     },
     {
       "path": "paired_reproduction/benchmark_cuda_events.py",
@@ -162,8 +170,8 @@
       "sha256": "76501ac763172a25b332fe4fa8ecff3a289af5d9bed0ac7e4621f3de4fd459b4"
     },
     {
-      "path": "README.md",
-      "sha256": "79046f22ce244a5b053f3e767e722c3183069c5f749b9c61e24dcd356c6b8007"
+      "path": "results/OOF_existing_summary_2026-10-17_10-06-14.csv",
+      "sha256": "c2a041dd4ac1da1aefb8ea77958064231f4311444aa5a1fd5c6bf5c53a36d510"
     },
     {
       "path": "results/global_frozen_selected_records_2026-10-17_10-06-14.csv",
@@ -172,10 +180,6 @@
     {
       "path": "results/image_training_means_2026-10-17_10-06-14.csv",
       "sha256": "5c59cb4c4f9dc095e3788baed01ac1ba4935657dd553b174adc77521352c7a0c"
-    },
-    {
-      "path": "results/OOF_existing_summary_2026-10-17_10-06-14.csv",
-      "sha256": "c2a041dd4ac1da1aefb8ea77958064231f4311444aa5a1fd5c6bf5c53a36d510"
     },
     {
       "path": "results/per_image_table6_global_frozen_2026-10-17_10-06-14.csv",

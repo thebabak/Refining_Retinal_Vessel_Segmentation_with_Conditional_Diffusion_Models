@@ -6,12 +6,12 @@ This repository contains the authors' current manuscript, its supporting numeric
 
 ## Manuscript
 
-- [Latest article PDF](manuscript/last_2026-10-17_10-46-16.pdf) — 23 pages.
-- [Latest LaTeX source](manuscript/Overleaf/last_2026-10-17_10-46-16.tex).
+- [Latest article PDF](manuscript/last_2026-10-19_17-56-29.pdf) — 23 pages.
+- [Latest LaTeX source](manuscript/Overleaf/last_2026-10-19_17-56-29.tex).
 - [Complete Overleaf source directory](manuscript/Overleaf/) — upload its contents and select the article TEX as the main document. The MDPI class and figure assets are included.
 - [Existing supporting CSV records](results/) — primary, per-image, training-seed and matched OOF summaries. These are copied unchanged; no calculation was rerun during repository rebuilding.
 
-The article version is 2026-10-17_10-46-16. This repository reorganisation does not alter its contents, numerical values, tables or figures.
+The article version is 2026-10-19_17-56-29. This revision clarifies that the earlier-run qualitative raster panels were retained, while its trained checkpoint and complete machine-readable prediction maps are unavailable for re-evaluation. Numerical values, table contents and figure files are unchanged.
 
 ## Framework diagram
 
