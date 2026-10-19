@@ -1,8 +1,8 @@
 {
-  "timestamp_tehran": "2026-10-19_17-56-29",
-  "previous_commit": "4b72bef2186e4be403dcea9899d52d0562600094",
-  "article_version": "2026-10-19_17-56-29",
-  "scope": "Clarification of retained earlier-run qualitative panels; scientific numbers and tables unchanged. Reviewer responses and full package remain private.",
+  "timestamp_tehran": "2026-10-19_18-16-27",
+  "previous_commit": "b613ddb740eca739f0998d736f635eca2f339d5c",
+  "article_version": "2026-10-19_18-16-27",
+  "scope": "Explicit no-learning-rate-warm-up statement, preserved earlier-run figure clarification, unchanged scientific results. AI disclosure unchanged at user request. Reviewer correspondence and full ZIP remain private.",
   "no_scientific_recalculation": true,
   "files": [
     {
@@ -11,11 +11,11 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "183adf86916b4a2cdcc57d94cec847bf8eed74998afeb36536d786840f4d6b3d"
+      "sha256": "1c8d4e4caf334169f0c35e84b828e6b576e6f4c720148274331f567e4c18d331"
     },
     {
       "path": "README.md",
-      "sha256": "6690fa69bad330373b6e0c7c25a05a6b1a8cc534c252d91b1938ad12dabb0654"
+      "sha256": "6cafe8340f2d1ea6bda72f0c76fcd41eaa708b597ef2f947d9f5240e02b2c265"
     },
     {
       "path": "diffusion_refiner/README.md",
@@ -90,8 +90,8 @@
       "sha256": "9f2d3cb4621eb396e7e3afd5cca61f78e75905601d88797401bbe510fbaea55f"
     },
     {
-      "path": "manuscript/Overleaf/last_2026-10-19_17-56-29.tex",
-      "sha256": "0a7934eef5735c96fb383185ec614ae6a89a21f0a99b61e2303009b7c05fb107"
+      "path": "manuscript/Overleaf/last_2026-10-19_18-16-27.tex",
+      "sha256": "42e9e1a5fec116dc13869cbb7ff25f012cbfd107c53f1a4899a9c9f168b45c01"
     },
     {
       "path": "manuscript/Overleaf/realdata/flowchart260801-2.png",
@@ -106,8 +106,8 @@
       "sha256": "d082758da0f06b8d26373ccf385bc953120338fd79c6133d06bb04a05ee43bfc"
     },
     {
-      "path": "manuscript/last_2026-10-19_17-56-29.pdf",
-      "sha256": "6a8f6135f3b6d5a3f436f4a8d350ff1c0d515a5505c3e0829cf298e5038c06f3"
+      "path": "manuscript/last_2026-10-19_18-16-27.pdf",
+      "sha256": "ae73ae48678c0a79f3ad9eda3a611822eef221c19ec66d2f4b495c634c1f5e8c"
     },
     {
       "path": "paired_reproduction/benchmark_cuda_events.py",
