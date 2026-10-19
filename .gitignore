@@ -28,7 +28,7 @@
 !/paired_reproduction/run_spatial_residual_refiner.py
 !/manuscript/
 !/results/
-!/repository_manifest_2026-10-19_18-16-27.json
+!/repository_manifest_2026-10-19_18-26-18.json
 **/__pycache__/
 *.pyc
 *.pt
@@ -49,3 +49,7 @@
 /manuscript/Overleaf/last_2026-10-19_17-56-29.tex
 
 /manuscript/last_2026-10-19_17-56-29.pdf
+
+/manuscript/Overleaf/last_2026-10-19_18-16-27.tex
+
+/manuscript/last_2026-10-19_18-16-27.pdf

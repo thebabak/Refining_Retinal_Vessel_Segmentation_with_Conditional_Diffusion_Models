@@ -6,12 +6,12 @@ This repository contains the authors' current manuscript, its supporting numeric
 
 ## Manuscript
 
-- [Latest article PDF](manuscript/last_2026-10-19_18-16-27.pdf) — 23 pages.
-- [Latest LaTeX source](manuscript/Overleaf/last_2026-10-19_18-16-27.tex).
+- [Latest article PDF](manuscript/last_2026-10-19_18-26-18.pdf) — 23 pages.
+- [Latest LaTeX source](manuscript/Overleaf/last_2026-10-19_18-26-18.tex).
 - [Complete Overleaf source directory](manuscript/Overleaf/) — upload its contents and select the article TEX as the main document. The MDPI class and figure assets are included.
 - [Existing supporting CSV records](results/) — primary, per-image, training-seed and matched OOF summaries. These are copied unchanged; no calculation was rerun during repository rebuilding.
 
-The article version is 2026-10-19_18-16-27. This revision clarifies that the earlier-run qualitative raster panels were retained, while its trained checkpoint and complete machine-readable prediction maps are unavailable for re-evaluation. Numerical values, table contents and figure files are unchanged.
+The article version is 2026-10-19_18-26-18. Figures 2 and 3 show selected predictions from the same controlled global/frozen reference experiment as Table 6, as confirmed by the authors. The unavailable-checkpoint statement concerns the separate earlier single-run experiment, not the experiment underlying these figures. Numerical values, table contents and figure files are unchanged.
 
 The refiner uses no learning-rate warm-up: it starts at the reported initial learning rate and uses cosine annealing. This is now explicit in the article. The AI disclosure is unchanged in this author working copy; the corresponding authors will update that statement before submission.
 
